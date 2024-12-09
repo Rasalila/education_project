@@ -1,0 +1,20 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+
+// .header {
+//   @include mixin.setka;
+
+//   .header__title {
+//     font-size: 90px;
+//     // color: blueviolet;
+//     color: variables.$text-color;
+//   }
+//   .header__subtitle {
+//     // color: blue;
+//     color: variables.$text-color;
+//   }
+//   .header__img {
+//     background-image: url("../img/34e974e177bb11ee9ad5ceda526c50ab_upscaled.jpeg");
+//     min-height: 200px;
+//   }
+// }
