@@ -4,20 +4,66 @@
 @use "../base/normalize";
 
 
-// .header {
-//   @include mixin.setka;
 
-//   .header__title {
-//     font-size: 90px;
-//     // color: blueviolet;
-//     color: variables.$text-color;
-//   }
-//   .header__subtitle {
-//     // color: blue;
-//     color: variables.$text-color;
-//   }
-//   .header__img {
-//     background-image: url("../img/34e974e177bb11ee9ad5ceda526c50ab_upscaled.jpeg");
-//     min-height: 200px;
-//   }
-// }
+header {
+  .logo {
+    padding: 17px 50px 7px 80px;
+  }
+
+  .nav, form {
+    padding-top: 15px;
+  }
+
+  .nav a {
+    // 1rem = 16px
+    font-size: 1rem;
+    line-height: 19px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid transparent;
+    transition: 0.5s all ease;
+  }
+
+  .nav a:hover {
+    color: rgb(0,22,137);
+    border-bottom: 1px solid rgb(0,22,137);
+  }
+
+  .switch-img {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+  }
+
+  form > div {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+    padding: 3px 4px 3px 8px;
+  }
+
+  form > div input {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    margin-top: 3px;
+    color: rgb(60, 60, 60);
+  }
+
+  form > div input::placeholder {
+    font-size: 1rem;
+    line-height: 16px;
+  }
+
+  .loupe {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .loupe > img {
+    padding-bottom: 3px;
+  }
+}
+

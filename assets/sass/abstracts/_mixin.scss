@@ -1,5 +1,66 @@
-@mixin attributes {
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  padding-left:24px;
+// @mixin attributes {
+//   font-family: "DM Sans", sans-serif;
+//   font-style: normal;
+//   padding-left:24px;
+// }
+
+@mixin setka {
+  :root {
+    font-size: 16px !important;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  ul, p, h1, h2, h3, figure, figcaption {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .clear {
+    clear: both;
+  }
+}
+
+@mixin font-h2 {
+/* текст заголовков */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+// font-size: 40px;
+font-size: 2.5rem;
+line-height: 48px;
+
+color: rgb(0,0,0);
+}
+
+@mixin font-text {
+/* текст в блоках */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+// font-size: 18px
+font-size: 1.125rem;
+line-height: 22px;
+
+color: rgb(0,0,0);
+}
+
+@mixin text-card {
+/* Описание специалиста и его подхода */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+color: rgb(153,153,153);
 }
