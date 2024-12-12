@@ -1,0 +1,32 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+@use "../base/fonts";
+@use "../base/normalize";
+// .container {
+//   @include setka;
+
+//   p {
+//     color: aquamarine;
+//     display: grid;
+//   }
+
+//   .container__text {
+//     background-color: $bacground-color;
+//     transform: matrix();
+//     color: blue;
+//   }
+
+//   .container__box {
+//     width: 30px;
+//     height: 30px;
+//     border: 1px solid red;
+//     @include transform(rotate(30deg));
+//   }
+
+//   .container__box-item {
+//     width: 70px;
+//     height: 30px;
+//     background-color: $bacground-color;
+//     @include transform(skew(30deg, 20deg));
+//   }
+// }

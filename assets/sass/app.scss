@@ -2,8 +2,15 @@
 @use "base/fonts";
 @use "abstracts/variables";
 @use "abstracts/mixin";
+
 @use "components/header";
-// @import "components/container";
-// @import "components/footer";
+@use "components/cover";
+@use "components/about";
+@use "components/stuff";
+@use "components/job";
+@use "components/reviews";
+@use "components/partners";
+@use "components/contact";
+@use "components/footer";
 
 // Для подключения
