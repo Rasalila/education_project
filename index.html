@@ -13,44 +13,73 @@
     <link rel="stylesheet" href=".assets/style/normalize.css" />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="stylesheet" href="./assets/sass/app.scss" />
+    <link rel="icon" href="assets/img/logo-cut.png" type="png">
 
-    <title>Академия НЭО</title>
+    <title>ГОТОВИМ НАСТОЯЩИХ ПРОФЕССИОНАЛОВ!</title>
   </head>
 
   <body>
     <!-- начало "Шапка" Расалила-->
     <header class="header container-fluid">
       <div class="container set">
-            <div class="row align-items-center">
-                  <a href="#" class="logo col-2">
+            <div class="div-logo row align-items-center d-flex justify-content-md-start justify-content-between justify-content-sm-start justify-content-lg-evenly justify-content-xxl-evenly">
+                  <a href="#" class="logo col-sm-2 col-md-2 col-lg-2">
                         <img src="./assets/img/logo.png" alt="союз нэо">
                   </a>
-                  <nav class="nav col-5 d-flex justify-content-between">
-                        <a href="#">О компании</a>
-                        <a href="#">Направления</a>
-                        <a href="#">Услуги</a>
-                        <a href="#">Обучение</a>
-                        <a href="#">Трудоустройство</a>
+                  <!-- <div class="nav_burger col-2">☰</div> -->
+                  
+                  <!-- md >= 768px, lg >= 992px, xl >= 1200px -->
+                  <nav class="nav col-sm-7 col-lg-6 col-md-6 col-7 col-xl-5 d-flex justify-content-between">
+                        <a href="#">Специалисты</a>
+                        <a href="#">Обучение и трудоустройство</a>
+                        <a href="#">Отзывы</a>
+                        <a href="#">Контакты</a>
+
                   </nav>
-                  <div class="col-1 switch-img">
+
+                  <!-- <div class="col-1 switch-img">
                         <img src="./assets/img/arrows.png" alt="переключатель">
-                  </div>
-                  <form class="col-4" name="search" action="#" method="GET">
-                        <div>
+                  </div> -->
+
+                  <form class="form-search justify-content-start col-sm-7 col-md-3 col-lg-4 col-xl-4" name="search" action="#" method="GET">
+                        <div class="d-flex justify-content-start">
                               <button class="loupe">
                                     <img src="./assets/img/loupe.png" alt="Поиск">
                               </button>
-                              <input type="text" name="search" placeholder="Искать направление">
+                              <input type="text" name="search" placeholder="Искать направление" class="search-area">
                         </div>
                   </form>
+                  <!-- <div class="d-flex justify-content-end">
+                        <button class="loupe loupe-mobile">
+                              <img src="./assets/img/loupe.png" alt="Поиск">
+                        </button>
+                  </div> -->
+                  <div class="menu">
+                        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                        <label for="burger-checkbox" class="burger"></label>
+                        <ul class="menu-list">
+                              <li><a href="#" class="menu-item">О компании</a><li>
+                              <li><a href="#" class="menu-item">Направления</a><li>
+                              <li><a href="#" class="menu-item">Услуги</a><li>
+                              <li><a href="#" class="menu-item">Обучение</a><li>
+                              <li><a href="#" class="menu-item">Трудоустройство</a><li></li>
+                        </ul>
+                    </div>
             </div>
       </div>
     </header>
     <!-- конец "Шапка" Расалила-->
     <main>
       <!-- "Обложка" Расалила -->
-      <div class="cover ">
-
+      <div class="cover container-fluid">
+            <div class="cover-img container set d-flex justify-content-between align-items-center ">
+                  <div class="cover-section ">
+                        <h1 class="cover-title">Академия «НЭО»</h1>
+                        <p class="cover-text lower">Академия профессиональной переподготовки и повышения квалификации</p>
+                        <p class="cover-text upper">ГОТОВИМ НАСТОЯЩИХ ПРОФЕССИОНАЛОВ!</p>
+                  </div>
+                  <img src="./assets/img/logo-cut.png" alt="логотип" class="cover-logo d-flex ">
+            </div>
       </div>
       <!-- конец "Обложка" Расалила-->
 
@@ -101,5 +130,6 @@
       src="./assets/bootstrap/bootstrap.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+      <script src="./index.js"></script>
   </body>
 </html>
