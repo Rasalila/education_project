@@ -5,8 +5,7 @@
 
 .footer {
   @include mixin.setka;
-
-  .footer__text {
+  &__text {
     font-size: variables.$font-size-medium;
     color: red;
     text-decoration: none;
@@ -47,21 +46,7 @@
     opacity: 0.75;
 }
 
-.list-inline {
-    display: inline;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-
-  .footer li {
-    padding: 0 10px;
-  }
-  
-  .list-inline a:hover {
+  .list a:hover {
     opacity: 1;
   }
   
@@ -69,3 +54,14 @@
     opacity: 0.9;
   }
   
+.list {
+  display: inline;
+    // display: flex;
+    // justify-content: space-evenly;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
