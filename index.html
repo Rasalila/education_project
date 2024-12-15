@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="./assets/bootstrap/bootstrap.min.css"
@@ -11,71 +12,1006 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <link rel="stylesheet" href=".assets/style/normalize.css" />
-    <link rel="stylesheet" href="./assets/sass/app.scss" />
 
-    <title>Aducation</title>
+    <title>Education</title>
   </head>
 
   <body>
     <!-- начало "Шапка" Расалила-->
-    <header class="header">
-
-    </header>
+    <header class="header"></header>
     <!-- конец "Шапка" Расалила-->
     <main>
       <!-- "Обложка" Расалила -->
-      <div class="cover">
-
-      </div>
+      <div class="cover"></div>
       <!-- конец "Обложка" Расалила-->
 
       <!-- начало "О компании" Виталия-->
-      <div class="about">
-
-      </div>
+      <div class="about"></div>
       <!-- конец "О компании" Виталия-->
-      
+
       <!-- начало "Специалисты" Мария-->
-      <div class="stuff">
+      <section class="container-fluid staff">
+        
+        <!-- Title section "Staff" -->
+        <div class="row">
+          <div class="col">
+            <h2 class="h2 staff__title">Специалисты</h2>
+          </div>
+        </div>
 
-      </div>
+        <div class="row">
+          <div class="col staff__card-box">
+
+            <!-- The first expert -->
+            <div class="border-0 h-100 staff__card">
+              
+              <!-- Photo -->
+              <div class="staff__wrap-img">
+                <img
+                  src="./assets/img/photo_sholohova_mv.jpg"
+                  class="staff__card-img"
+                  alt="photo_expert"
+                />
+              </div>
+
+              <!-- About expert -->
+              <div class="mt-4 staff__card-body">
+
+                <!-- Main information -->
+                <div class="staff__wrap-text">
+                  <h3 class="staff__card-title">Шолохова Мария</h3>
+                  <p class="staff__card-text">
+                    Магистр психологии, индивидуальный и семейный психотерапевт,
+                    Действительный член Общероссийской профессиональной
+                    психотерапевтической лиги
+                  </p>
+                  <h4 class="mt-4 staff__card-cost">Cтоимость консультации</h4>
+                  <h5 class="h5 mt-3 staff__card-item">Индивидуальная консультация</h5>
+                  <p class="staff__card-price">6 000 руб./60 мин</з>
+                  <h5 class="h5 mt-3 staff__card-item">Семейная консультация</h5>
+                  <p class="staff__card-price">9 000 руб./90 мин</p>
+                </div>
+
+                <!-- More information -->
+                <div class="staff__wrap-btn">
+
+                  <button
+                    type="button"
+                    class="btn btn-secondary w-100 staff__card-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal1"
+                  >
+                  Подробнее
+                  </button>
+
+                  <!-- Modal  -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal1"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal1Label"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable staff__modal"
+                    >
+                      <div class="modal-content rounded-0">
+                        
+                        <!-- Modal header -->
+                        <div class="modal-header staff__modal-header">
+                          
+                          <!-- Photo of the first expert -->
+                          <div class="staff__wrap-modal-img">
+                            <img
+                              class="staff__modal-img"
+                              src="./assets/img/thumbnails/photo_sholohova_mv.jpg"
+                              alt="thumbnail_photo_expert"
+                            />
+                          </div>
+
+                          <!-- Main information -->
+                          <div class="staff__wrap-modal-text">
+                            <h2 class="modal-title fs-5 staff__modal-title" id="exampleModal1Label">
+                              Шолохова Мария
+                            </h2>
+                            <p class="modal-title text-secondary fs-6 staff__text">Магистр психологии, индивидуальный и семейный психотерапевт, Действительный член Общероссийской профессиональной психотерапевтической лиги</p>
+                          </div>
+
+                          <!-- Close modal -->
+                          <button
+                            type="button"
+                            class="btn-close mb-5"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body bg-body-secondary staff__modal-body">
+                          <p class="staff__text">МГУ им. Ломоносова, магистратура, менеджмент,1999-2001</p>
+                          <p class="staff__text">Институт психотерапии и клинической психологии, практический психолог, 2021</p>
+                          <p class="staff__text">Московский институт психоанализа, магистратура "Семейное консультирование и психотерапия", 2021</p>
+                          <p class="staff__text">Academy of Communication, НЛП-практик, 2021</p>
+                          <p class="staff__text">Институт психотерапии и клинической психологии, EMDR, ДПДГ, 2021</p>
+                          <p class="staff__text">Center of Psychological Mastery,  обучение по программе «Метафорические ассоциативные карты в консультировании и игротерапии», 2021</p>
+                          <p class="staff__text">European Psychological Center, наследственная травма, 2022</p>
+                          <p class="staff__text">Московский институт психоанализа, Основы эффективной психологической работы с подростками, 2022</p>
+                          <p class="staff__text">Авторский курс Ольги Берг «Терапия как творчество», 2022</p>
+                          <p class="staff__text">БФ «Свет в руках», обучение по программе «Психологическое сопровождение перинатальных потерь»2022</p>
+                          <p class="staff__text">«Родительский>ЦЕНТР ПСИХОЛОГИИ И БИЗНЕС КОНСУЛЬТИРОВАНИЯ «ЛОГОС» <br />«Родительский курс. Успешный родитель - успешный ребенок», 2022</p>
+                          <p class="staff__text">Евразийская академия современного образования «Психологическое консультирование с применением игротерапии и арт инструментов в работе с детьми и подростками», 2023</p>
+                          <p class="staff__text">Институт практической психологии и супервизии им. О. Берг<br />Кризисная психология, 2023</p>
+                          <p class="staff__text">Волонтер горячей линии ОППЛ, 2022</p>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer staff__modal-footer">
+                          <a
+                            href="https://t.me/@psychologyacademycenter"
+                            class="btn btn-dark staff__card-btn"
+                            >Записаться на консультацию</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- The second expert -->
+            <div class="border-0 h-100 staff__card">
+            
+              <!-- Photo -->
+              <div class="staff__wrap-img">
+                <img
+                  src="./assets/img/photo_perl_anastasia.jpg"
+                  class="staff__card-img"
+                  alt="photo_expert"
+                />
+              </div>
+
+              <!-- About expert -->
+              <div class="mt-4 staff__card-body">
+
+                <!-- Main information -->
+                <div class="staff__wrap-text">
+                  <h3 class="staff__card-title">Перл Анастасия</h3>
+                  <p class="staff__card-text">Магистр психологии, клинический психолог, семейный терапевт, арт-терапевт, перинатальный психолог. Сертифицированный специалист в области системного подхода</p>
+                  <h4 class="mt-4 mb-3 staff__card-cost">Cтоимость консультации</h4>
+                  <p class="staff__card-price">8 000 руб./60 мин</p>
+                </div>
+
+                <!-- More information -->
+                <div class="staff__wrap-btn">
+
+                  <button
+                    type="button"
+                    class="btn btn-secondary w-100 staff__card-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2"
+                  >
+                  Подробнее
+                  </button>
+
+                  <!-- Modal  -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal2"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal2Label"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable staff__modal"
+                    >
+                      <div class="modal-content rounded-0">
+                        
+                        <!-- Modal header -->
+                        <div class="modal-header staff__modal-header">
+                          
+                          <!-- Photo of the first expert -->
+                          <div class="staff__wrap-modal-img">
+                            <img class="staff__modal-img" src="./assets/img/thumbnails/photo_perl_anastasia.jpg" alt="thumbnail_photo_expert">
+                          </div>
+
+                          <!-- Main information -->
+                          <div class="staff__wrap-modal-text">
+                            <h2 class="modal-title fs-5 staff__modal-title" id="exampleModal2Label">
+                              Перл Анастасия
+                            </h2>
+                            <p class="modal-title text-secondary fs-6 staff__text">Магистр психологии, клинический психолог, семейный терапевт, арт&ndash;терапевт, перинатальный психолог. Сертифицированный специалист в области системного подхода</p>
+                          </div>
+
+                          <!-- Close modal -->
+                          <button
+                            type="button"
+                            class="btn-close mb-5"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body bg-body-secondary staff__modal-body">
+                          <p class="staff__text">Опыт работы - 17 лет</p>
+                          <p class="staff__text">Преподавание - 11 лет</p>
+                          <p class="staff__text">Магистр психологии, клинический психолог, семейный терапевт, арт-терапевт, перинатальный психолог.</p>
+                          <p class="staff__text">Сертифицированный специалист в области системного подхода</p>
+                          <p class="staff__text staff__text_bold">Эксперт в области:</p>
+                          <ul>
+                            <li class="staff__text">арт-терапии;</li>
+                            <li class="staff__text">системной семейной психотерапии;</li>
+                            <li class="staff__text">перинатальной психологии;</li>
+                            <li class="staff__text">когнитивно-поведенческой психотерапии;</li>
+                            <li class="staff__text">телесно-ориентированной психотерапии;</li>
+                            <li class="staff__text">ДПДГ;</li>
+                            <li class="staff__text">IMTT;</li>
+                            <li class="staff__text">гипнотерапии</li>
+                            <li class="staff__text">символдрамы.</li>
+                          </ul> 
+                          <p class="staff__text">Автор методик терапии в работе с возрастными кризисами.</p>
+                          <p class="staff__text staff__text_bold">Опыт работы: с 2008 частная практика.</p>
+                          <p class="staff__text">Ведение семинаров и тренингов в психологических центрах и образовательных учреждениях с 2010 года.</p> 
+                          <p class="staff__text staff__text_bold">Образование:</p>
+                          <ul>
+                            <li class="staff__text">2008-2009 гг. — Московский Педагогический Государственный Университет. Специальность «Практический психолог»</li>
+                            <li class="staff__text">2008-2009 гг. — Институт Психотерапии и Клинической Психологии. Системно-феноменологический подход. Интегративная модель семейной системной терапии.</li>
+                            <li class="staff__text">2008-2010 гг. — Институт Консультирования и Системных Решений. Семейные расстановки и системно-феноменологический подход Б.Хеллингера. Международная сертификация.</li>
+                            <li class="staff__text">2009 г. — Институт Консультирования и Системных Решений. Расстановки с зависимыми людьми и членами их семей. Работа с прерванным движением души.</li>
+                            <li class="staff__text">2009-2010 гг. — Институт Консультирования и системных решений. Структурные расстановки и расстановки внутренних частей личности. Международная сертификация.</li>
+                            <li class="staff__text">2010-2011 гг. — Институт Перинатальной Психологии и Психологии Репродуктивной Сферы. Перинатальные и репродуктивные проблемы в психологическом консультировании и психотерапии. Ведение курсов для беременных и родителей.</li>
+                            <li class="staff__text">2011-2012 гг. — Институт психотерапии и клинической психологии. Квалификация «Клинический психолог» с направленностью «Арт-терапия».</li>
+                            <li class="staff__text">2011 г. — Институт Перинатальной Психологии и Психологии Репродуктивной Сферы. Программа Обухова Я.Л. Основы символдрамы.</li>
+                            <li class="staff__text">2012 г. — Институт Перинатальной Психологии и Психологии Репродуктивной Сферы. Программа Леви Т.С. «Диагностика и коррекция психологической границы методом телесной терапии».</li>
+                            <li class="staff__text">2015 г. — Программа Гордона Ньюфелда «Детская психотерапия. Работа с привязанностью».</li>
+                            <li class="staff__text">2016 г. — Институт психотерапии и клинической психологии. Клиническая трансперсональная психотерапия.</li>
+                            <li class="staff__text">2016 г. — Институт психотерапии и клинической психологии. Работа с МАК картами.</li>
+                            <li class="staff__text">2016-2017 гг. — Институт психотерапии и клинической психологии. Когнитивно-поведенческие технологии.</li>
+                            <li class="staff__text">2022 г. — Московский центр терапии EMDR. Сертификационная программа обучения EMDR.</li>
+                            <li class="staff__text">2024 г. — Институт психотерапии и клинической психологии. Базовые технологии Эриксоновского гипноза.</li>
+                            <li class="staff__text">2024 г. — Институт трансформации образа Роберта Миллера. Сертификация IMTT по работе с различной проблематикой.</li>
+                          </ul>
+                          <p class="staff__text staff__text_bold">Проблематика, с которой работает:</p>
+                          <ul>
+                            <li class="staff__text">Конфликтные отношения с родителями, партнерами, детьми и родственниками, коллегами;</li>
+                            <li class="staff__text">Переживания при разрыве отношений, прекращение нежелательных отношений;</li>
+                            <li class="staff__text">Сложности построения длительных отношений;</li>
+                            <li class="staff__text">Депрессия, безразличие к жизни, возрастные кризисы;</li>
+                            <li class="staff__text">Острый стресс, чувство собственного бессилия, постоянная тревога, раздражительность;</li>
+                            <li class="staff__text">Переживание тяжелого чувства вины, сильной обиды;</li>
+                            <li class="staff__text">Проблемы в общении с окружающими, одиночество, неуверенность в себе;</li>
+                            <li class="staff__text">Сильное горе, потеря близкого человека;</li>
+                            <li class="staff__text">Комплексы, проблемы с самооценкой, чувства вины, обида;</li>
+                            <li class="staff__text">Навязчивые состояния, страхи и фобии;</li>
+                            <li class="staff__text">Психосоматика, бесплодие.</li>
+                          </ul>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer staff__modal-footer">
+                          <a
+                            href="https://t.me/@psychologyacademycenter"
+                            class="btn btn-dark staff__card-btn"
+                            >Записаться на консультацию</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- The third expert -->
+            <div class="border-0 h-100 staff__card">
+              
+              <!-- Photo -->
+              <div class="staff__wrap-img">
+                <img
+                  src="./assets/img/photo_aslyamova_olga.jpeg"
+                  class="staff__card-img"
+                  alt="photo_expert"
+                />
+              </div>
+
+              <!-- About expert -->
+              <div class="mt-4 staff__card-body">
+
+                <!-- Main information -->
+                <div class="staff__wrap-text">
+                  <h3 class="staff__card-title">Аслямова Ольга</h3>
+                  <p class="staff__card-text">
+                    Психолог, гештальт-терапевт, ведущая психологической группы «Быть собой!», коуч
+                  </p>
+                  <h4 class="mt-4 staff__card-cost">Cтоимость консультации</h4>
+                  <p class="staff__card-price">5 000 руб./60 мин</з>
+                </div>
+
+                <!-- More information -->
+                <div class="staff__wrap-btn">
+
+                  <button
+                    type="button"
+                    class="btn btn-secondary w-100 staff__card-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal3"
+                  >
+                  Подробнее
+                  </button>
+
+                  <!-- Modal  -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal3"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal3Label"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable staff__modal"
+                    >
+                      <div class="modal-content rounded-0">
+                        
+                        <!-- Modal header -->
+                        <div class="modal-header staff__modal-header">
+                          
+                          <!-- Photo of the first expert -->
+                          <div class="staff__wrap-modal-img">
+                            <img
+                              class="staff__modal-img"
+                              src="./assets/img/thumbnails/photo_aslyamova_olga.jpg"
+                              alt="thumbnail_photo_expert"
+                            />
+                          </div>
+
+                          <!-- Main information -->
+                          <div class="staff__wrap-modal-text">
+                            <h2 class="modal-title fs-5 staff__modal-title" id="exampleModal3Label">
+                              Аслямова Ольга
+                            </h2>
+                            <p class="modal-title text-secondary fs-6 staff__text">Психолог, гештальт-терапевт, ведущая психологической группы «Быть собой!», коуч</p>
+                          </div>
+
+                          <!-- Close modal -->
+                          <button
+                            type="button"
+                            class="btn-close mb-5"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body bg-body-secondary staff__modal-body">
+                          <p class="staff__text">НИИДПО, квалификация: практический психолог с дополнительной квалификацией психолог-психотерапевт. Окончила в 2021г.</p>
+                          <p class="staff__text">2021-2022г. - первая ступень Московского гештальт института.</p>
+                          <p class="staff__text">С 2022 года вторая ступень Московского гештальт института.</p>
+                          <p class="staff__text">2016-2021 год руководитель (коуч) по развитию партнерских продаж ООО «СК «РОСГОССТРАХ-Жизнь» и ООО «ВСК-Линия жизни».</p>
+                          <p class="staff__text">2017 г. Обучающий тренинг «PRESENTATION SKILLS», автор и бизнес-тренер Stanislav Klinikov (Калифорния, США).</p>
+                          <p class="staff__text">2018 г. Обучающий тренинг «Болевые точки профессиональной эффективности», ведущий бизнес-тренер Слепокуров Алексей.</p>
+                          <p class="staff__text">Частная практика с 2021 года: индивидуальные сессии и психологические группы.</p>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer staff__modal-footer">
+                          <a
+                            href="https://t.me/@psychologyacademycenter"
+                            class="btn btn-dark staff__card-btn"
+                            >Записаться на консультацию</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- The forth expert -->
+            <div class="border-0 h-100 staff__card">
+              
+              <!-- Photo -->
+              <div class="staff__wrap-img">
+                <img
+                  src="./assets/img/photo_aslyamova_olga.jpeg"
+                  class="staff__card-img"
+                  alt="photo_expert"
+                />
+              </div>
+
+              <!-- About expert -->
+              <div class="mt-4 staff__card-body">
+
+                <!-- Main information -->
+                <div class="staff__wrap-text">
+                  <h3 class="staff__card-title">Аслямова Ольга</h3>
+                  <p class="staff__card-text">
+                    Психолог, гештальт-терапевт, ведущая психологической группы «Быть собой!», коуч
+                  </p>
+                  <h4 class="mt-4 staff__card-cost">Cтоимость консультации</h4>
+                  <p class="staff__card-price">5 000 руб./60 мин</з>
+                </div>
+
+                <!-- More information -->
+                <div class="staff__wrap-btn">
+
+                  <button
+                    type="button"
+                    class="btn btn-secondary w-100 staff__card-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal3"
+                  >
+                  Подробнее
+                  </button>
+
+                  <!-- Modal  -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal3"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal3Label"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable staff__modal"
+                    >
+                      <div class="modal-content rounded-0">
+                        
+                        <!-- Modal header -->
+                        <div class="modal-header staff__modal-header">
+                          
+                          <!-- Photo of the first expert -->
+                          <div class="staff__wrap-modal-img">
+                            <img
+                              class="staff__modal-img"
+                              src="./assets/img/thumbnails/photo_aslyamova_olga.jpg"
+                              alt="thumbnail_photo_expert"
+                            />
+                          </div>
+
+                          <!-- Main information -->
+                          <div class="staff__wrap-modal-text">
+                            <h2 class="modal-title fs-5 staff__modal-title" id="exampleModal3Label">
+                              Аслямова Ольга
+                            </h2>
+                            <p class="modal-title text-secondary fs-6 staff__text">Психолог, гештальт-терапевт, ведущая психологической группы «Быть собой!», коуч</p>
+                          </div>
+
+                          <!-- Close modal -->
+                          <button
+                            type="button"
+                            class="btn-close mb-5"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body bg-body-secondary staff__modal-body">
+                          <p class="staff__text">НИИДПО, квалификация: практический психолог с дополнительной квалификацией психолог-психотерапевт. Окончила в 2021г.</p>
+                          <p class="staff__text">2021-2022г. - первая ступень Московского гештальт института.</p>
+                          <p class="staff__text">С 2022 года вторая ступень Московского гештальт института.</p>
+                          <p class="staff__text">2016-2021 год руководитель (коуч) по развитию партнерских продаж ООО «СК «РОСГОССТРАХ-Жизнь» и ООО «ВСК-Линия жизни».</p>
+                          <p class="staff__text">2017 г. Обучающий тренинг «PRESENTATION SKILLS», автор и бизнес-тренер Stanislav Klinikov (Калифорния, США).</p>
+                          <p class="staff__text">2018 г. Обучающий тренинг «Болевые точки профессиональной эффективности», ведущий бизнес-тренер Слепокуров Алексей.</p>
+                          <p class="staff__text">Частная практика с 2021 года: индивидуальные сессии и психологические группы.</p>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer staff__modal-footer">
+                          <a
+                            href="https://t.me/@psychologyacademycenter"
+                            class="btn btn-dark staff__card-btn"
+                            >Записаться на консультацию</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- BOOTSTRAP ADAPTIVE VERSION Experts (Main of section "Staff") -->
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 m-5">
+          <!-- The first expert -->
+          <div class="col">
+            <div class="border-0 h-100 staff__card">
+              
+              <!-- Photo -->
+              <div class="staff__wrap-img">
+                <img
+                  src="./assets/img/photo_sholohova_mv.jpg"
+                  class="staff__card-img"
+                  alt="photo_expert"
+                />
+              </div>
+
+              <!-- About expert -->
+              <div class="mt-4 staff__card-body">
+
+                <!-- Main information -->
+                <div class="staff__wrap-text">
+                  <h3 class="staff__card-title">Шолохова Мария</h3>
+                  <p class="staff__card-text">
+                    Магистр психологии, индивидуальный и семейный психотерапевт,
+                    Действительный член Общероссийской профессиональной
+                    психотерапевтической лиги
+                  </p>
+                  <h4 class="mt-4 staff__card-cost">Cтоимость консультации</h4>
+                  <h5 class="h5 mt-3 staff__card-item">Индивидуальная консультация</h5>
+                  <p class="staff__card-price">6 000 руб./60 мин</з>
+                  <h5 class="h5 mt-3 staff__card-item">Семейная консультация</h5>
+                  <p class="staff__card-price">9 000 руб./90 мин</p>
+                </div>
+
+                <!-- More information -->
+                <div class="staff__wrap-btn">
+
+                  <button
+                    type="button"
+                    class="btn btn-secondary w-100 staff__card-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal1"
+                  >
+                  Подробнее
+                  </button>
+
+                  <!-- Modal  -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal1"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal1Label"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable staff__modal"
+                    >
+                      <div class="modal-content rounded-0">
+                        
+                        <!-- Modal header -->
+                        <div class="modal-header staff__modal-header">
+                          
+                          <!-- Photo of the first expert -->
+                          <div class="staff__wrap-modal-img">
+                            <img
+                              class="staff__modal-img"
+                              src="./assets/img/thumbnails/photo_sholohova_mv.jpg"
+                              alt="thumbnail_photo_expert"
+                            />
+                          </div>
+
+                          <!-- Main information -->
+                          <div class="staff__wrap-modal-text">
+                            <h2 class="modal-title fs-5 staff__modal-title" id="exampleModal1Label">
+                              Шолохова Мария
+                            </h2>
+                            <p class="modal-title text-secondary fs-6 staff__text">Магистр психологии, индивидуальный и семейный психотерапевт, Действительный член Общероссийской профессиональной психотерапевтической лиги</p>
+                          </div>
+
+                          <!-- Close modal -->
+                          <button
+                            type="button"
+                            class="btn-close mb-5"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body bg-body-secondary staff__modal-body">
+                          <p class="staff__text">МГУ им. Ломоносова, магистратура, менеджмент,1999-2001</p>
+                          <p class="staff__text">Институт психотерапии и клинической психологии, практический психолог, 2021</p>
+                          <p class="staff__text">Московский институт психоанализа, магистратура "Семейное консультирование и психотерапия", 2021</p>
+                          <p class="staff__text">Academy of Communication, НЛП-практик, 2021</p>
+                          <p class="staff__text">Институт психотерапии и клинической психологии, EMDR, ДПДГ, 2021</p>
+                          <p class="staff__text">Center of Psychological Mastery,  обучение по программе «Метафорические ассоциативные карты в консультировании и игротерапии», 2021</p>
+                          <p class="staff__text">European Psychological Center, наследственная травма, 2022</p>
+                          <p class="staff__text">Московский институт психоанализа, Основы эффективной психологической работы с подростками, 2022</p>
+                          <p class="staff__text">Авторский курс Ольги Берг «Терапия как творчество», 2022</p>
+                          <p class="staff__text">БФ «Свет в руках», обучение по программе «Психологическое сопровождение перинатальных потерь»2022</p>
+                          <p class="staff__text">«Родительский>ЦЕНТР ПСИХОЛОГИИ И БИЗНЕС КОНСУЛЬТИРОВАНИЯ «ЛОГОС» <br />«Родительский курс. Успешный родитель - успешный ребенок», 2022</p>
+                          <p class="staff__text">Евразийская академия современного образования «Психологическое консультирование с применением игротерапии и арт инструментов в работе с детьми и подростками», 2023</p>
+                          <p class="staff__text">Институт практической психологии и супервизии им. О. Берг<br />Кризисная психология, 2023</p>
+                          <p class="staff__text">Волонтер горячей линии ОППЛ, 2022</p>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer staff__modal-footer">
+                          <a
+                            href="https://t.me/@psychologyacademycenter"
+                            class="btn btn-dark staff__card-btn"
+                            >Записаться на консультацию</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- The second expert -->
+          <div class="col">
+            <div class="border-0 h-100 staff__card">
+            
+              <!-- Photo -->
+              <div class="staff__wrap-img">
+                <img
+                  src="./assets/img/photo_perl_anastasia.jpg"
+                  class="staff__card-img"
+                  alt="photo_expert"
+                />
+              </div>
+
+              <!-- About expert -->
+              <div class="mt-4 staff__card-body">
+
+                <!-- Main information -->
+                <div class="staff__wrap-text">
+                  <h3 class="staff__card-title">Перл Анастасия</h3>
+                  <p class="staff__card-text">Магистр психологии, клинический психолог, семейный терапевт, арт-терапевт, перинатальный психолог. Сертифицированный специалист в области системного подхода</p>
+                  <h4 class="mt-4 mb-3 staff__card-cost">Cтоимость консультации</h4>
+                  <p class="staff__card-price">8 000 руб./60 мин</p>
+                </div>
+
+                <!-- More information -->
+                <div class="staff__wrap-btn">
+
+                  <button
+                    type="button"
+                    class="btn btn-secondary w-100 staff__card-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2"
+                  >
+                  Подробнее
+                  </button>
+
+                  <!-- Modal  -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal2"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal2Label"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable staff__modal"
+                    >
+                      <div class="modal-content rounded-0">
+                        
+                        <!-- Modal header -->
+                        <div class="modal-header staff__modal-header">
+                          
+                          <!-- Photo of the first expert -->
+                          <div class="staff__wrap-modal-img">
+                            <img class="staff__modal-img" src="./assets/img/thumbnails/photo_perl_anastasia.jpg" alt="thumbnail_photo_expert">
+                          </div>
+
+                          <!-- Main information -->
+                          <div class="staff__wrap-modal-text">
+                            <h2 class="modal-title fs-5 staff__modal-title" id="exampleModal2Label">
+                              Перл Анастасия
+                            </h2>
+                            <p class="modal-title text-secondary fs-6 staff__text">Магистр психологии, клинический психолог, семейный терапевт, арт&ndash;терапевт, перинатальный психолог. Сертифицированный специалист в области системного подхода</p>
+                          </div>
+
+                          <!-- Close modal -->
+                          <button
+                            type="button"
+                            class="btn-close mb-5"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body bg-body-secondary staff__modal-body">
+                          <p class="staff__text">Опыт работы - 17 лет</p>
+                          <p class="staff__text">Преподавание - 11 лет</p>
+                          <p class="staff__text">Магистр психологии, клинический психолог, семейный терапевт, арт-терапевт, перинатальный психолог.</p>
+                          <p class="staff__text">Сертифицированный специалист в области системного подхода</p>
+                          <p class="staff__text staff__text_bold">Эксперт в области:</p>
+                          <ul>
+                            <li class="staff__text">арт-терапии;</li>
+                            <li class="staff__text">системной семейной психотерапии;</li>
+                            <li class="staff__text">перинатальной психологии;</li>
+                            <li class="staff__text">когнитивно-поведенческой психотерапии;</li>
+                            <li class="staff__text">телесно-ориентированной психотерапии;</li>
+                            <li class="staff__text">ДПДГ;</li>
+                            <li class="staff__text">IMTT;</li>
+                            <li class="staff__text">гипнотерапии</li>
+                            <li class="staff__text">символдрамы.</li>
+                          </ul> 
+                          <p class="staff__text">Автор методик терапии в работе с возрастными кризисами.</p>
+                          <p class="staff__text staff__text_bold">Опыт работы: с 2008 частная практика.</p>
+                          <p class="staff__text">Ведение семинаров и тренингов в психологических центрах и образовательных учреждениях с 2010 года.</p> 
+                          <p class="staff__text staff__text_bold">Образование:</p>
+                          <ul>
+                            <li class="staff__text">2008-2009 гг. — Московский Педагогический Государственный Университет. Специальность «Практический психолог»</li>
+                            <li class="staff__text">2008-2009 гг. — Институт Психотерапии и Клинической Психологии. Системно-феноменологический подход. Интегративная модель семейной системной терапии.</li>
+                            <li class="staff__text">2008-2010 гг. — Институт Консультирования и Системных Решений. Семейные расстановки и системно-феноменологический подход Б.Хеллингера. Международная сертификация.</li>
+                            <li class="staff__text">2009 г. — Институт Консультирования и Системных Решений. Расстановки с зависимыми людьми и членами их семей. Работа с прерванным движением души.</li>
+                            <li class="staff__text">2009-2010 гг. — Институт Консультирования и системных решений. Структурные расстановки и расстановки внутренних частей личности. Международная сертификация.</li>
+                            <li class="staff__text">2010-2011 гг. — Институт Перинатальной Психологии и Психологии Репродуктивной Сферы. Перинатальные и репродуктивные проблемы в психологическом консультировании и психотерапии. Ведение курсов для беременных и родителей.</li>
+                            <li class="staff__text">2011-2012 гг. — Институт психотерапии и клинической психологии. Квалификация «Клинический психолог» с направленностью «Арт-терапия».</li>
+                            <li class="staff__text">2011 г. — Институт Перинатальной Психологии и Психологии Репродуктивной Сферы. Программа Обухова Я.Л. Основы символдрамы.</li>
+                            <li class="staff__text">2012 г. — Институт Перинатальной Психологии и Психологии Репродуктивной Сферы. Программа Леви Т.С. «Диагностика и коррекция психологической границы методом телесной терапии».</li>
+                            <li class="staff__text">2015 г. — Программа Гордона Ньюфелда «Детская психотерапия. Работа с привязанностью».</li>
+                            <li class="staff__text">2016 г. — Институт психотерапии и клинической психологии. Клиническая трансперсональная психотерапия.</li>
+                            <li class="staff__text">2016 г. — Институт психотерапии и клинической психологии. Работа с МАК картами.</li>
+                            <li class="staff__text">2016-2017 гг. — Институт психотерапии и клинической психологии. Когнитивно-поведенческие технологии.</li>
+                            <li class="staff__text">2022 г. — Московский центр терапии EMDR. Сертификационная программа обучения EMDR.</li>
+                            <li class="staff__text">2024 г. — Институт психотерапии и клинической психологии. Базовые технологии Эриксоновского гипноза.</li>
+                            <li class="staff__text">2024 г. — Институт трансформации образа Роберта Миллера. Сертификация IMTT по работе с различной проблематикой.</li>
+                          </ul>
+                          <p class="staff__text staff__text_bold">Проблематика, с которой работает:</p>
+                          <ul>
+                            <li class="staff__text">Конфликтные отношения с родителями, партнерами, детьми и родственниками, коллегами;</li>
+                            <li class="staff__text">Переживания при разрыве отношений, прекращение нежелательных отношений;</li>
+                            <li class="staff__text">Сложности построения длительных отношений;</li>
+                            <li class="staff__text">Депрессия, безразличие к жизни, возрастные кризисы;</li>
+                            <li class="staff__text">Острый стресс, чувство собственного бессилия, постоянная тревога, раздражительность;</li>
+                            <li class="staff__text">Переживание тяжелого чувства вины, сильной обиды;</li>
+                            <li class="staff__text">Проблемы в общении с окружающими, одиночество, неуверенность в себе;</li>
+                            <li class="staff__text">Сильное горе, потеря близкого человека;</li>
+                            <li class="staff__text">Комплексы, проблемы с самооценкой, чувства вины, обида;</li>
+                            <li class="staff__text">Навязчивые состояния, страхи и фобии;</li>
+                            <li class="staff__text">Психосоматика, бесплодие.</li>
+                          </ul>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer staff__modal-footer">
+                          <a
+                            href="https://t.me/@psychologyacademycenter"
+                            class="btn btn-dark staff__card-btn"
+                            >Записаться на консультацию</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- The third expert -->
+          <div class="col">
+            <div class="border-0 h-100 staff__card">
+              
+              <!-- Photo -->
+              <div class="staff__wrap-img">
+                <img
+                  src="./assets/img/photo_aslyamova_olga.jpeg"
+                  class="staff__card-img"
+                  alt="photo_expert"
+                />
+              </div>
+
+              <!-- About expert -->
+              <div class="mt-4 staff__card-body">
+
+                <!-- Main information -->
+                <div class="staff__wrap-text">
+                  <h3 class="staff__card-title">Аслямова Ольга</h3>
+                  <p class="staff__card-text">
+                    Психолог, гештальт-терапевт, ведущая психологической группы «Быть собой!», коуч
+                  </p>
+                  <h4 class="mt-4 staff__card-cost">Cтоимость консультации</h4>
+                  <p class="staff__card-price">5 000 руб./60 мин</з>
+                </div>
+
+                <!-- More information -->
+                <div class="staff__wrap-btn">
+
+                  <button
+                    type="button"
+                    class="btn btn-secondary w-100 staff__card-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal3"
+                  >
+                  Подробнее
+                  </button>
+
+                  <!-- Modal  -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal3"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal3Label"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable staff__modal"
+                    >
+                      <div class="modal-content rounded-0">
+                        
+                        <!-- Modal header -->
+                        <div class="modal-header staff__modal-header">
+                          
+                          <!-- Photo of the first expert -->
+                          <div class="staff__wrap-modal-img">
+                            <img
+                              class="staff__modal-img"
+                              src="./assets/img/thumbnails/photo_aslyamova_olga.jpg"
+                              alt="thumbnail_photo_expert"
+                            />
+                          </div>
+
+                          <!-- Main information -->
+                          <div class="staff__wrap-modal-text">
+                            <h2 class="modal-title fs-5 staff__modal-title" id="exampleModal3Label">
+                              Аслямова Ольга
+                            </h2>
+                            <p class="modal-title text-secondary fs-6 staff__text">Психолог, гештальт-терапевт, ведущая психологической группы «Быть собой!», коуч</p>
+                          </div>
+
+                          <!-- Close modal -->
+                          <button
+                            type="button"
+                            class="btn-close mb-5"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body bg-body-secondary staff__modal-body">
+                          <p class="staff__text">НИИДПО, квалификация: практический психолог с дополнительной квалификацией психолог-психотерапевт. Окончила в 2021г.</p>
+                          <p class="staff__text">2021-2022г. - первая ступень Московского гештальт института.</p>
+                          <p class="staff__text">С 2022 года вторая ступень Московского гештальт института.</p>
+                          <p class="staff__text">2016-2021 год руководитель (коуч) по развитию партнерских продаж ООО «СК «РОСГОССТРАХ-Жизнь» и ООО «ВСК-Линия жизни».</p>
+                          <p class="staff__text">2017 г. Обучающий тренинг «PRESENTATION SKILLS», автор и бизнес-тренер Stanislav Klinikov (Калифорния, США).</p>
+                          <p class="staff__text">2018 г. Обучающий тренинг «Болевые точки профессиональной эффективности», ведущий бизнес-тренер Слепокуров Алексей.</p>
+                          <p class="staff__text">Частная практика с 2021 года: индивидуальные сессии и психологические группы.</p>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer staff__modal-footer">
+                          <a
+                            href="https://t.me/@psychologyacademycenter"
+                            class="btn btn-dark staff__card-btn"
+                            >Записаться на консультацию</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- The forth expert -->
+          <div class="col">
+            <div class="border-0 h-100 staff__card">
+              
+              <!-- Photo -->
+              <div class="staff__wrap-img">
+                <img
+                  src="./assets/img/photo_aslyamova_olga.jpeg"
+                  class="staff__card-img"
+                  alt="photo_expert"
+                />
+              </div>
+
+              <!-- About expert -->
+              <div class="mt-4 staff__card-body">
+
+                <!-- Main information -->
+                <div class="staff__wrap-text">
+                  <h3 class="staff__card-title">Аслямова Ольга</h3>
+                  <p class="staff__card-text">
+                    Психолог, гештальт-терапевт, ведущая психологической группы «Быть собой!», коуч
+                  </p>
+                  <h4 class="mt-4 staff__card-cost">Cтоимость консультации</h4>
+                  <p class="staff__card-price">5 000 руб./60 мин</з>
+                </div>
+
+                <!-- More information -->
+                <div class="staff__wrap-btn">
+
+                  <button
+                    type="button"
+                    class="btn btn-secondary w-100 staff__card-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal3"
+                  >
+                  Подробнее
+                  </button>
+
+                  <!-- Modal  -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal3"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal3Label"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable staff__modal"
+                    >
+                      <div class="modal-content rounded-0">
+                        
+                        <!-- Modal header -->
+                        <div class="modal-header staff__modal-header">
+                          
+                          <!-- Photo of the first expert -->
+                          <div class="staff__wrap-modal-img">
+                            <img
+                              class="staff__modal-img"
+                              src="./assets/img/thumbnails/photo_aslyamova_olga.jpg"
+                              alt="thumbnail_photo_expert"
+                            />
+                          </div>
+
+                          <!-- Main information -->
+                          <div class="staff__wrap-modal-text">
+                            <h2 class="modal-title fs-5 staff__modal-title" id="exampleModal3Label">
+                              Аслямова Ольга
+                            </h2>
+                            <p class="modal-title text-secondary fs-6 staff__text">Психолог, гештальт-терапевт, ведущая психологической группы «Быть собой!», коуч</p>
+                          </div>
+
+                          <!-- Close modal -->
+                          <button
+                            type="button"
+                            class="btn-close mb-5"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body bg-body-secondary staff__modal-body">
+                          <p class="staff__text">НИИДПО, квалификация: практический психолог с дополнительной квалификацией психолог-психотерапевт. Окончила в 2021г.</p>
+                          <p class="staff__text">2021-2022г. - первая ступень Московского гештальт института.</p>
+                          <p class="staff__text">С 2022 года вторая ступень Московского гештальт института.</p>
+                          <p class="staff__text">2016-2021 год руководитель (коуч) по развитию партнерских продаж ООО «СК «РОСГОССТРАХ-Жизнь» и ООО «ВСК-Линия жизни».</p>
+                          <p class="staff__text">2017 г. Обучающий тренинг «PRESENTATION SKILLS», автор и бизнес-тренер Stanislav Klinikov (Калифорния, США).</p>
+                          <p class="staff__text">2018 г. Обучающий тренинг «Болевые точки профессиональной эффективности», ведущий бизнес-тренер Слепокуров Алексей.</p>
+                          <p class="staff__text">Частная практика с 2021 года: индивидуальные сессии и психологические группы.</p>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer staff__modal-footer">
+                          <a
+                            href="https://t.me/@psychologyacademycenter"
+                            class="btn btn-dark staff__card-btn"
+                            >Записаться на консультацию</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+
       <!-- конец "Специалисты Мария-->
-      
-      <!-- начало "Трудоустройство" Александра-->
-      <div class="job">
 
-      </div>
+      <!-- начало "Трудоустройство" Александра-->
+      <div class="job"></div>
       <!-- конец "Трудоустройство" Александра-->
 
       <!-- начало "Отзывы" Диана-->
-      <div class="reviews">
-
-      </div>
+      <div class="reviews"></div>
       <!-- конец "Отзывы" Диана-->
 
       <!-- начало "Партнёры" Оля Б.-->
-      <div class="partners">
-
-      </div>
+      <div class="partners"></div>
       <!-- конец "Партнёры" Оля Б.-->
 
       <!-- начало "Связь" Оля-->
-      <div class="contact">
-
-      </div>
+      <div class="contact"></div>
       <!-- конец "Связь" Оля-->
     </main>
 
-      <!-- начало "Футер" Настя-->
-    <footer class="footer">
-      
-    </footer>
+    <!-- начало "Футер" Настя-->
+    <footer class="footer"></footer>
     <!-- конец "Футер" Настя-->
 
-    <script
-      src="./assets/bootstrap/bootstrap.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
   </body>
 </html>

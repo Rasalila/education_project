@@ -1,0 +1,115 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+
+.staff {
+  margin-top: 5.8rem;
+  max-width: 3500px;
+  .staff__title {
+    // font-size: variables.$fs-h2;
+    text-align: center;
+  }
+  .staff__text {
+
+  }
+  .staff__text_bold {
+    font-weight: bold;
+  }
+  .staff__card-box {
+    margin: 2.8rem 2.5rem 0 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 2rem;
+    justify-content: space-evenly;
+  }
+  .staff__card {
+    background-color: white;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0px 4px 26px 0px rgba(203, 203, 203, 0.25);
+  }
+  .staff__wrap-img {
+    width: 100%;
+  }
+  .staff__card-img {
+    @include mixin.img-fit;
+  }
+  .staff__card-body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0 15px 0 15px;
+  }
+  .staff__wrap-text {
+
+  }
+  .staff__card-title {
+  }
+  .staff__card-text {
+  }
+  .staff__card-cost{
+  }
+  .staff__card-item{
+  }
+  .staff__card-price{
+  }
+  .staff__card-price {
+    color: rgb(48, 180, 218);
+  }
+  .staff__card-btn {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 100px;
+    background: variables.$bg-darkblue;
+  }
+  .staff__modal {
+    // --bs-modal-footer-border-color: transparent;
+    max-width: 800px;
+  }
+  .staff__modal-header{
+    // --bs-modal-header-border-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .staff__wrap-modal-img {
+    height: 100px;
+    min-width: 100px;
+  }
+  .staff__modal-img {
+    @include mixin.img-fit;
+    border-radius: 163px;
+  }
+  .staff__wrap-modal-text{
+  }
+  .staff__modal-title{
+  }
+  .staff__modal-body{
+    // --bs-modal-body-border-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+  .staff__modal-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 5000px) {
+
+
+  }
+
+  @media screen and (max-width: 430px) {
+    .staff__card-box {
+      margin: 2.8rem 0 0 0;
+    }
+    .staff__card {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
