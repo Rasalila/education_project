@@ -2,3 +2,43 @@
 @use "../abstracts/variables";
 @use "../base/fonts";
 @use "../base/normalize";
+
+.reviews {
+  // margin-left: 100px;
+  // margin-right: 100px;
+  text-align: center;
+  margin-top: 120px;
+
+  .reviews__cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .reviews__card {
+    margin: 0 0.5em;
+    width: calc(100% / 4);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 26px 0px rgba(203, 203, 203, 0.25);
+  }
+  .reviews__title {
+    @include mixin.title;
+    font-size: variables.$fs-h2;
+    color: variables.$title-color;
+    line-height: 2.375rem;
+    margin-bottom: 35px;
+  }
+  .reviews__image-wrapper {
+    height: 22vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .reviews__image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

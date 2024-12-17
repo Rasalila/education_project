@@ -1,0 +1,47 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+@use "../base/fonts";
+@use "../base/normalize";
+
+.carousel-item__img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.carousel-item p {
+  margin-bottom: 60px;
+  @include mixin.text;
+  font-size: 1rem;
+}
+.card-body {
+  display: none;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev-icon {
+  background-image: url(../img/arrow_left.png);
+  width: 44px;
+  height: 44px;
+  margin-top: 200px;
+}
+.carousel-control-next-icon {
+  background-image: url(../img/arrow_right.png);
+  width: 44px;
+  height: 44px;
+  margin-top: 200px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 44px;
+}
+@media screen and (max-width: 576px) {
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex;
+    justify-content: center;
+  }
+}
