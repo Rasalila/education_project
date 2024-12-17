@@ -32,14 +32,14 @@
       <!-- начало "Специалисты" Мария-->
       <section class="container-fluid staff">
         <!-- Title section "Staff" -->
-        <div class="row">
+        <div class="row staff__row">
           <div class="col">
             <h2 class="staff__section-title">Специалисты</h2>
           </div>
         </div>
 
         <!-- Main of section "Staff" -->
-        <div class="row">
+        <div class="row staff__row">
           <div class="col staff__card-box">
             <!-- The first expert -->
             <div class="staff__card">
@@ -327,7 +327,7 @@
                             </li>
                             <li class="staff__text">ДПДГ;</li>
                             <li class="staff__text">IMTT;</li>
-                            <li class="staff__text">гипнотерапии</li>
+                            <li class="staff__text">гипнотерапии;</li>
                             <li class="staff__text">символдрамы.</li>
                           </ul>
                           <p class="staff__text">
@@ -496,6 +496,211 @@
               <div class="staff__wrap-img">
                 <div class="staff__inner-img">
                   <img
+                    src="./assets/img/photo_avramenko_valerii.png"
+                    class="staff__img"
+                    alt="photo_expert"
+                  />
+                </div>
+              </div>
+
+              <!-- About expert -->
+              <div class="staff__card-body">
+                <!-- Main information -->
+                <div class="staff__wrap-text">
+                  <h3 class="staff__title">Авраменко Валерий</h3>
+                  <p class="staff__text">Психолог, психотерапевт, психиатр</p>
+                  <h4 class="staff__title">Индивидуальная консультация</h4>
+                  <p class="staff__text staff__text_accent">от 15000 руб.</p>
+                </div>
+
+                <!-- More information -->
+                <div class="staff__wrap-btn">
+                  <button
+                    type="button"
+                    class="btn btn-secondary staff__btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal4"
+                  >
+                    Подробнее
+                  </button>
+
+                  <!-- Modal  -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal4"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal4Label"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable staff__modal"
+                    >
+                      <div class="modal-content rounded-0">
+                        <!-- Modal header -->
+                        <div class="modal-header staff__modal-header">
+                          <!-- Photo of the first expert -->
+                          <div class="staff__wrap-modal-img">
+                            <img
+                              class="staff__img"
+                              src="./assets/img/photo_avramenko_valerii.png"
+                              alt="photo_expert"
+                            />
+                          </div>
+
+                          <!-- Main information -->
+                          <div>
+                            <h2
+                              class="modal-title staff__title"
+                              id="exampleModal4Label"
+                            >
+                              Авраменко Валерий
+                            </h2>
+                            <p
+                              class="modal-title staff__text staff__modal-desc"
+                            >
+                              Психолог, психотерапевт, психиатр
+                            </p>
+                          </div>
+
+                          <!-- Close modal -->
+                          <button
+                            type="button"
+                            class="btn-close mb-5"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          <p class="staff__text">Стаж: 21 год</p>
+                          <p class="staff__text staff__text_bold">
+                            Образование:
+                          </p>
+                          <ul>
+                            <li class="staff__text">
+                              Кубанский государственный медицинский университет:
+                              врач, лечебное дело
+                            </li>
+                            <li class="staff__text">
+                              Кубанский государственный университет:
+                              психолог-практик
+                            </li>
+                            <li class="staff__text">
+                              Кубанский государственный медицинский университет
+                              : клиническая ординатура по психиатрия, с курсом
+                              психотерапии
+                            </li>
+                          </ul>
+                          <p class="staff__text staff__text_bold">
+                            Квалификация:
+                          </p>
+                          <ul>
+                            <li class="staff__text">
+                              Всемирный сертификат по психотерапии (WCPC) World
+                              Certificate for Psychotherapy
+                            </li>
+                            <li class="staff__text">
+                              Европейский сертификат психотерапевта (ECP)
+                              European Certificate of Psychotherapy
+                            </li>
+                            <li class="staff__text">
+                              Российская аккредитация по психотерапии (RАP)
+                              Russian Accreditation in Psychotherapy
+                            </li>
+                            <li class="staff__text">Психолог-практик (КГУ)</li>
+                            <li class="staff__text">
+                              Врач-психотерапевт, психиатр, ОЗЗ (КГМУ)
+                            </li>
+                          </ul>
+                          <p class="staff__text staff__text_bold">
+                            Членство в профессиональных ассоциациях:
+                          </p>
+                          <ul>
+                            <li class="staff__text">
+                              мировые
+                              <ul>
+                                <li class="staff__text staff__list-item">
+                                  WCP (World Council for Psychotherapy)
+                                </li>
+                                <li class="staff__text staff__list-item">
+                                  IAAP (International Association of Applied
+                                  Psychology)
+                                </li>
+                                <li class="staff__text staff__list-item">
+                                  ISAD (International Society for Affective
+                                  Disorders)
+                                </li>
+                                <li class="staff__text staff__list-item">
+                                  ICP (International Council of Psychologists)
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="staff__text">
+                              региональные
+                              <ul>
+                                <li class="staff__text staff__list-item">
+                                  EAP (European Association for Psychotherapy)
+                                </li>
+                                <li class="staff__text staff__list-item">
+                                  UKCP (United Kingdom Council for
+                                  Psychotherapy)
+                                </li>
+                                <li class="staff__text staff__list-item">
+                                  APA (American Psychological Association)
+                                </li>
+                                <li class="staff__text staff__list-item">
+                                  CMHA (Canadian Mental Health Association)
+                                </li>
+                                <li class="staff__text staff__list-item">
+                                  PPL (Professional Psychotherapeutic League)
+                                </li>
+                                <li class="staff__text staff__list-item">
+                                  EACLIPT, ЕΨ (European Association of Clinical
+                                  Psychology and Psychological Treatment)
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="staff__text">
+                              специализированные
+                              <ul>
+                                <li class="staff__text staff__list-item">
+                                  ABP (Association for Business Psychology)
+                                </li>
+                                <li class="staff__text staff__list-item">
+                                  SPR (Society for Psychotherapy Research)
+                                </li>
+                                <li class="staff__text staff__list-item">
+                                  UKBS (Balint Society, United Kingdom)
+                                </li>
+                                <li class="staff__text staff__list-item">
+                                  SMBF (Société Médicale Balint, France)
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer staff__modal-footer">
+                          <a
+                            href="https://t.me/psychologyacademycenter"
+                            class="btn btn-secondary staff__btn staff__btn_large"
+                            >Записаться на консультацию</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- The forth expert -->
+            <div class="staff__card">
+              <!-- Photo -->
+              <div class="staff__wrap-img">
+                <div class="staff__inner-img">
+                  <img
                     src="./assets/img/photo_aslyamova_olga.jpeg"
                     class="staff__img"
                     alt="photo_expert"
@@ -624,154 +829,9 @@
                 </div>
               </div>
             </div>
-
-            <!-- The forth expert -->
-            <div class="staff__card">
-              <!-- Photo -->
-              <div class="staff__wrap-img">
-                <div class="staff__inner-img">
-                  <img
-                    src="./assets/img/"
-                    class="staff__img"
-                    alt="photo_expert"
-                  />
-                </div>
-              </div>
-
-              <!-- About expert -->
-              <div class="staff__card-body">
-                <!-- Main information -->
-                <div class="staff__wrap-text">
-                  <h3 class="staff__title">ФИО</h3>
-                  <p class="staff__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere nesciunt magni, voluptatum unde inventore fuga?
-                  </p>
-                  <h4 class="staff__title">Индивидуальная консультация</h4>
-                  <p class="text-danger staff__text_accent">5000 руб.</p>
-                </div>
-
-                <!-- More information -->
-                <div class="staff__wrap-btn">
-                  <button
-                    type="button"
-                    class="btn btn-secondary staff__btn"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal4"
-                  >
-                    Подробнее
-                  </button>
-
-                  <!-- Modal  -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal4"
-                    tabindex="-1"
-                    aria-labelledby="exampleModal4Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable staff__modal"
-                    >
-                      <div class="modal-content rounded-0">
-                        <!-- Modal header -->
-                        <div class="modal-header staff__modal-header">
-                          <!-- Photo of the first expert -->
-                          <div class="staff__wrap-modal-img">
-                            <img
-                              class="staff__img"
-                              src="./assets/img/"
-                              alt="photo_expert"
-                            />
-                          </div>
-
-                          <!-- Main information -->
-                          <div>
-                            <h2
-                              class="modal-title text-danger staff__title"
-                              id="exampleModal4Label"
-                            >
-                              ФИО
-                            </h2>
-                            <p
-                              class="modal-title staff__text staff__modal-desc"
-                            >
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Fuga magnam ea, iure hic dolorem sapiente!
-                            </p>
-                          </div>
-
-                          <!-- Close modal -->
-                          <button
-                            type="button"
-                            class="btn-close mb-5"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                          <p class="staff__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Sapiente eveniet perspiciatis eligendi a amet
-                            enim corrupti animi aut voluptas voluptatem, fuga
-                            nam? Libero dicta minima autem ipsam? Ipsum officia
-                            aut expedita maxime optio veniam facilis, iste odit
-                            dicta aperiam beatae impedit tempore quibusdam ullam
-                            delectus similique hic iure laborum cumque, deserunt
-                            in. Dicta similique saepe quasi ex unde asperiores
-                            reiciendis deleniti fuga recusandae tempora rerum,
-                            dolore non earum eveniet a ut iure porro numquam
-                            accusantium fugiat? Odit ducimus sequi amet
-                            molestias ut id odio voluptates, commodi vel
-                            distinctio, dicta ipsum libero provident. Facere
-                            voluptatum reiciendis molestiae soluta! Voluptatum
-                            enim praesentium vitae perferendis modi, deleniti
-                            tenetur. Reiciendis blanditiis iure dicta delectus
-                            minima tenetur soluta provident necessitatibus
-                            quisquam ex consequuntur, autem tempore commodi
-                            temporibus repellat nobis praesentium natus
-                            quibusdam consectetur fuga quidem facilis nemo vitae
-                            laboriosam? Reprehenderit soluta ex sint
-                            voluptatibus ipsam veniam laudantium voluptas cum
-                            placeat corporis sapiente dicta recusandae numquam
-                            modi cupiditate consequatur rem, quae dignissimos
-                            vero facere? Non perspiciatis cumque eum iste dicta
-                            amet sapiente minima nostrum tempora dolor ex nam,
-                            voluptates ea? Eligendi illum quam id distinctio
-                            accusamus harum sapiente adipisci tempora excepturi
-                            repudiandae labore perferendis similique nostrum
-                            vitae non unde, sit quasi deleniti ut alias?
-                            Assumenda nam, dolorum quo possimus veniam at
-                            inventore, velit officia quisquam, molestiae illum
-                            quam. Vitae, praesentium rem? Aperiam ratione
-                            temporibus totam quam adipisci voluptate doloremque
-                            reiciendis quod cumque. Similique doloribus iste
-                            modi quibusdam voluptas quidem, quia cum dolor iure,
-                            dignissimos nemo iusto molestiae corporis. Possimus
-                            quasi ut dolor necessitatibus nostrum tenetur
-                            quaerat.
-                          </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="modal-footer staff__modal-footer">
-                          <a
-                            href="https://t.me/psychologyacademycenter"
-                            class="btn btn-secondary staff__btn staff__btn_large"
-                            >Записаться на консультацию</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-
       <!-- конец "Специалисты Мария-->
 
       <!-- начало "Трудоустройство" Александра-->
