@@ -2,3 +2,29 @@
 @use "../abstracts/variables";
 @use "../base/fonts";
 @use "../base/normalize";
+
+
+.contact {
+    height: 198px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+.contact__text {
+margin-top: 120px;
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.contact__button {
+    padding: 21px 59px;
+    border: 0px;
+    
+    background-color: #D9D9D9;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+}
+}
