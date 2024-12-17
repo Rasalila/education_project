@@ -1,10 +1,14 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
 
-
+* {
+  outline: 1px solid red;
+}
 .staff {
   margin-top: 7.4rem;/*119px*/
   padding: 0;
+  
+
 
   .staff__section-title {
     @include mixin.title;
