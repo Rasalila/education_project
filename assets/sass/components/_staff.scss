@@ -1,109 +1,123 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
 
+
 .staff {
-  margin-top: 5.8rem;
-  // max-width: 3500px;
-  .staff__title {
-    // font-size: variables.$fs-h2;
+  margin-top: 7.4rem;/*119px*/
+  padding: 0;
+
+  .staff__section-title {
+    @include mixin.title;
+    font-size: variables.$fs-h2;
+    color: variables.$title-color;
+    line-height: 2.375rem; /* 38 px */
     text-align: center;
   }
+  .staff__title {
+    @include mixin.text;
+    font-size: 1rem;
+  }
   .staff__text {
-
+    @include mixin.text;
+    font-size: variables.$fs-text;
+    color: variables.$text-color;
+    line-height: 1rem;
+  }
+  .staff__text_accent {
+    color: variables.$text-color-accent;
+    line-height: 1.7rem; /* 27 px */
   }
   .staff__text_bold {
     font-weight: bold;
   }
   .staff__card-box {
-    margin: 2.8rem 2.5rem 0 2.5rem;
+    width: calc(100% - 10rem);
+    box-sizing: border-box;
+    margin: 2.7rem 5rem 0 5rem; /* 43px 80px 0 80px*/
+    padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15.6rem, 21.9rem));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.69rem;/* 43px */
     justify-content: space-evenly;
   }
   .staff__card {
-    background-color: white;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    box-shadow: 0px 4px 26px 0px rgba(203, 203, 203, 0.25);
-  }
-  .staff__wrap-img {
-  }
-  .staff__card-img {
-    @include mixin.img-fit;
-  }
-  .staff__card-body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 4px 26px 0px rgba(203, 203, 203, 0.25);
+  }
+  .staff__wrap-img {
+    background-color: variables.$bg-lightblue;
+  }
+  .staff__inner-img{
+    height: 9.5rem; /* 153px */
+    width: 9.5rem; /* 153px */
+    margin: 35px 0 30px 26px;
+  }
+  .staff__img {
+    @include mixin.img-fit;
+    border-radius: 10.2rem; /*163px*/
+  }
+  .staff__card-body {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
     justify-content: space-between;
     gap: 0;
-    padding: 0 15px 0 15px;
+    padding: 0.75rem 1.125rem 1.3rem 1.125rem;
   }
   .staff__wrap-text {
-
-  }
-  .staff__card-title {
-  }
-  .staff__card-text {
-  }
-  .staff__card-cost{
-  }
-  .staff__card-item{
-  }
-  .staff__card-price{
-  }
-  .staff__card-price {
-    color: rgb(48, 180, 218);
-  }
-  .staff__card-btn {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    margin-bottom: 15px;
+  }
+  .staff__wrap-btn{
+    display: flex;
+  }
+  .staff__btn {
+    height: 1.75rem; /*27px*/
+    width: 7.625rem; /*122px*/
+    box-sizing: border-box;
     border: 1px solid rgb(215, 215, 215);
-    border-radius: 100px;
+    border-radius: 180px;
     background: variables.$bg-darkblue;
+    font-size: variables.$fs-btn;
+    color: variables.$text-color-btn;
+    align-self: flex-end;
+  }
+  .staff__btn_large {
+    width: 10.9rem;/* 175px*/
+    align-self: flex-start;
   }
   .staff__modal {
-    // --bs-modal-footer-border-color: transparent;
     max-width: 800px;
   }
   .staff__modal-header{
-    // --bs-modal-header-border-color: transparent;
+    --bs-modal-header-border-color: transparent;
     display: flex;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .staff__wrap-modal-img {
     height: 100px;
     min-width: 100px;
   }
-  .staff__modal-img {
-    @include mixin.img-fit;
-    border-radius: 163px;
-  }
-  .staff__wrap-modal-text{
-  }
-  .staff__modal-title{
-  }
-  .staff__modal-body{
-    // --bs-modal-body-border-color: transparent;
-    display: flex;
-    flex-direction: column;
-  }
   .staff__modal-footer{
+    --bs-modal-footer-border-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-
-  @media screen and (max-width: 2500px) {
-    .staff__card {
-      grid-template-rows: 1fr 1fr;
+  
+  @media screen and (max-width: 1170px) {
+    .staff__card-box {
+      box-sizing: border-box;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 35rem));
     }
-
+    .staff__card-body {
+      flex-direction: column;
+    }
   }
-
   @media screen and (max-width: 430px) {
     .staff__card-box {
       margin: 2.8rem 0 0 0;
@@ -111,6 +125,10 @@
     .staff__card {
       display: flex;
       flex-direction: column;
+    }
+    .staff__card-body {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
     .staff__modal-desc{
       display: none;

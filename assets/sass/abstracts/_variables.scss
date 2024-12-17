@@ -1,11 +1,17 @@
-/*Цвета заголовков и текстов*/
-// $title-color:rgb(238, 202, 139);
-// $text-color: rgb(0, 0, 0);
+/* TEXT COLOR */
+$title-color:rgb(43, 43, 43);
+$text-color: rgb(140, 140, 140);
+$text-color-accent: rgb(48, 180, 218);
+$text-color-btn: rgb(255, 255, 255);
 
-/*Размеры шрифтов*/
-// $fs-text: 1rem;
-// $fs-h2: 3rem;
-// $fs-h3: 2.5rem;
-// $fs-h4: 2.0rem;
+
+/* FONT-SIZE */
+$fs-h2: 1.875rem; /* 30px */
+$fs-text: 0.75rem;/* 12px */
+$fs-btn: 0.625rem; /* 10px */
+
+/*FONT-FAMILY*/
+$ff: "Gilroy", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 $bg-darkblue: rgb(0, 22, 137);
+$bg-lightblue: rgba(197, 217, 231, 0.3);
