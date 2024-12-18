@@ -3,18 +3,13 @@
 @use "../base/fonts";
 @use "../base/normalize";
 
-
-
 header {
-  .container{
+  .container {
     max-height: 70px;
-    
-    // border: 1px solid rgb(2, 185, 221);
   }
 
   .div-logo {
     height: 70px;
-    // margin-top: -15px;
   }
 
   .logo {
@@ -41,8 +36,8 @@ header {
   }
 
   .nav a:hover {
-    color: rgb(0,22,137);
-    border-bottom: 1px solid rgb(0,22,137);
+    color: rgb(0, 22, 137);
+    border-bottom: 1px solid rgb(0, 22, 137);
   }
 
   .switch-img {
@@ -67,7 +62,6 @@ header {
     border: none;
     outline: none;
     padding-left: 5px;
-    // margin-top: 3px;
     color: rgb(60, 60, 60);
   }
 
@@ -85,14 +79,15 @@ header {
   .loupe > img {
     padding-bottom: 3px;
   }
- 
-  .loupe-mobile{
+
+  .loupe-mobile {
     // position: absolute;
     // display: none;
     // position: relative;
     // top: -30px;
   }
 }
+
 // бургер-меню
 .burger-checkbox, .burger, .menu-list {
   display: none;
@@ -102,21 +97,17 @@ header {
   position: relative;
   z-index: 1;
   cursor: pointer;
-  // display: block;
-  // тут
-  margin-top: -80px;
+  margin-top: -90px;
   left: 30%;
   transform: translateX(700%);
-
-  // position: relative;
   border: none;
   background: transparent;
   width: 40px;
   height: 26px;
 }
-.burger::before,
-.burger::after {
-  content: '';
+
+.burger::before, .burger::after {
+  content: "";
   left: 0;
   position: absolute;
   display: block;
@@ -125,42 +116,45 @@ header {
   border-radius: 10px;
   background: #000;
 }
+
 .burger::before {
   top: 0;
   box-shadow: 0 11px 0 #000;
-  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
 }
+
 .burger::after {
   bottom: 0;
-  transition: bottom .3s .15s, transform .3s;
+  transition: bottom 0.3s 0.15s, transform 0.3s;
 }
+
 .burger-checkbox:checked + .burger::before {
   top: 11px;
   transform: rotate(45deg);
-  box-shadow: 0 6px 0 rgba(0,0,0,0);
-  transition: box-shadow .15s, top .3s, transform .3s .15s;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
 }
+
 .burger-checkbox:checked + .burger::after {
   bottom: 11px;
   transform: rotate(-45deg);
-  transition: bottom .3s, transform .3s .15s;
+  transition: bottom 0.3s, transform 0.3s 0.15s;
 }
+
 .menu-list {
   top: 0;
   left: 56%;
   position: absolute;
-  // display: grid;
   gap: 12px;
   padding: 42px 0;
   margin: 0;
   background: rgb(255, 255, 255);
   list-style-type: none;
-  // тут
   transform: translateX(300%);
-  transition: .3s;
+  transition: 0.3s;
   width: 200px;
-  
 }
+
 .menu-item {
   display: block;
   padding: 8px;
@@ -171,64 +165,58 @@ header {
   border-bottom: 1px solid transparent;
   transition: 0.5s all ease;
 }
+
 .menu-item:hover {
-    color: rgb(0,22,137);
-    border-bottom: 1px solid rgb(0,22,137);
-    background-color: rgb(209, 209, 209);
-  }
-  
+  color: rgb(0, 22, 137);
+  border-bottom: 1px solid rgb(0, 22, 137);
+  background-color: rgb(209, 209, 209);
+}
 
 .burger-checkbox:checked ~ .menu-list {
   transform: translateX(0);
 }
-  // .header .nav_burger {
-  //   display: none;
-  //   font-size: 2rem;
-  //   cursor: pointer;
-  // }
 
 // обложка
-
 .cover {
-  
-  // border: 5px solid rgb(221, 170, 2);
   width: 100%;
-  background-color: rgb(40,50,112);
+  background-color: rgb(40, 50, 112);
   height: 469px;
   color: white;
 }
 
-.cover-section{
+.cover-section {
   margin-top: 8%;
   margin-left: 2%;
   width: 100%;
   height: 100%;
 }
+
 // текст
 .cover-title, .cover-text {
-  font-family: 'Trebuchet MS';
+  font-family: "Trebuchet MS";
   font-style: normal;
   font-weight: 400;
 }
+
 .cover-title {
-font-size: 36px;
-line-height: 44px;
-text-align: start;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: start;
 }
 
 .cover-text {
-font-size: 18px;
-line-height: 30px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
-.lower, .upper{
+.lower, .upper {
   max-width: 500px;
 }
 
 .upper {
-font-size: 32px;
-line-height: 37px;
-text-decoration: underline;
+  font-size: 32px;
+  line-height: 37px;
+  text-decoration: underline;
 }
 
 .cover-logo {
@@ -237,51 +225,45 @@ text-decoration: underline;
 }
 
 .cover-img {
-  margin-top: 5%;
-  // border: 5px solid rgb(221, 170, 2);
   max-width: 1200px;
   background-size: cover;
 }
 
 // см разрешение 992
 @media screen and (max-width: 1200px) {
-  .container{
+  .container {
     max-width: 1000px;
   }
 
-  .cover{
+  .cover {
     height: 400px;
   }
+
   .cover-logo {
     max-width: 25%;
   }
 
-  header .nav {
-    // margin-top: 8px;
+  .switch-img {
+    margin: 2% 4px 2% 4px;
   }
 
-  .switch-img{
-    margin: 2% 4px 2% 4px;
+  .cover-title, .cover-text {
+    text-align: start;
+    margin-left: 10%;
   }
 }
 
 // см разрешение 768
 @media screen and (max-width: 992px) {
-  .cover-title, .cover-text{
-    text-align: center;
-}
-
   .cover-section {
-  // display: flex;
-  display: flex;
-  flex-direction: column;
-  // flex-wrap: wrap;
-  // align-content: center;
-        
-}
-.cover-logo {
-  margin-top: 3%;
-}
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .cover-logo {
+    margin-top: 3%;
+  }
 
   .div-logo {
     gap: 2px;
@@ -290,55 +272,41 @@ text-decoration: underline;
   header .logo {
     margin-top: 12px;
   }
+
   .switch-img > img {
     margin-top: 5px;
   }
 
-  .form-search{
+  .form-search {
     margin-top: 3px;
   }
-  // .loupe-mobile{
-  //   display: grid;
-  //   position: relative;
-  //   top: -30px;
-  // }
-  // .cover-title {
-  //   font-size: 36px;
-
-  //   }
-    
-  //   .cover-text {
-  //   font-size: 18px;
-  //   width: 400px;
-  //   }
-    .cover-logo{
-      // margin-right: 100px;
-    }
 }
 
 // см разрешение 576
 @media screen and (max-width: 768px) {
-  
   .cover {
     max-height: 600px;
     height: 600px;
   }
+
   .cover-img {
     display: flex;
     flex-direction: column;
   }
- .cover-logo{
-  max-width: 40%;
- }
+
+  .cover-logo {
+    max-width: 40%;
+  }
+
   .switch-img {
     display: none;
   }
+
   header form > div {
     margin-top: 10px;
   }
 
   header .nav {
-    // width: 50%;
     font-size: 0.75rem;
     gap: 3px;
     padding: 0;
@@ -356,36 +324,31 @@ text-decoration: underline;
   .nav a {
     gap: 14px;
   }
-  .form-search{
-    // margin: auto;
-  }
-  .form-search{
+  .form-search {
     margin-top: 15px;
-    // display: none;
   }
+
+  .cover-title, .cover-text {
+    text-align: start;
+    margin-left: 22%;
+}
 }
 
 // см разрешение 480
 @media screen and (max-width: 650px) {
-  .cover-title, .cover-text{
-    text-align: center;
-    max-width: 470px;
-}
-.lower{
-
-}
+  .cover-title, .cover-text {
+    margin-left: 18%;
+  }
 
   .cover-section {
-  // display: flex;
-  display: flex;
-        flex-direction: column;
-        // flex-wrap: wrap;
-        // align-content: center;
-        
-}
-.cover-logo {
-  margin-top: 3%;
-}
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cover-logo {
+    margin-top: 3%;
+  }
+
   header .logo {
     text-align: center;
   }
@@ -394,11 +357,6 @@ text-decoration: underline;
     display: none;
   }
 
-  .header .nav_burger {
-    // display: block;
-    // margin-top: 20px;
-  }
-  
   // бургер-меню
   .burger-checkbox, .burger {
     display: none;
@@ -407,31 +365,56 @@ text-decoration: underline;
   .menu-item, .burger {
     display: block;
   }
-  .menu-list {
-    // display: none;
+}
+
+@media screen and (max-width: 576px){
+  .cover-title, .cover-text {
+    text-align: start;
+    max-width: 470px;
+    margin-left: 14%;
+  }
+  .cover-section {
+    margin-top: 10%;
   }
 }
+
 @media screen and (max-width: 490px) {
- .burger {
-  left: 20%;
- }
- .menu-list {
-  left: 50%;
- }
+  .cover-section {
+    margin-top: 13%;
+  }
+  .burger {
+    left: 20%;
+  }
+
+  .menu-list {
+    left: 50%;
+  }
+
+  .cover-title, .cover-text {
+    margin-left: 3%;
+  }
+
+  .cover-logo{
+    margin-top: 40px;
+  }
 }
+
 @media screen and (max-width: 430px) {
   .burger {
-   left: 7%;
+    left: 7%;
   }
+
   .header, .cover {
     min-width: 375px;
   }
+
   .menu-list {
     left: 45%;
-   }
- }
- @media screen and (max-width: 388px) {
+  }
+}
+
+@media screen and (max-width: 388px) {
   .burger {
     top: -18px;
-   }
- }
+  }
+}
