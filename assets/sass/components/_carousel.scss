@@ -20,6 +20,7 @@
 }
 .carousel-inner {
   padding: 1em;
+  margin-bottom: 100px;
 }
 .carousel-control-prev-icon {
   background-image: url(../img/arrow_left.png);
@@ -36,6 +37,17 @@
 .carousel-control-prev,
 .carousel-control-next {
   width: 44px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 6px;
+  height: 6px;
+  margin-right: 7px;
+  margin-left: 7px;
+  background-color: variables.$bg-darkblue;
+  border-radius: 50%;
+}
+.carousel-indicators {
+  margin-bottom: -2rem;
 }
 @media screen and (max-width: 576px) {
   .carousel-item-next,
