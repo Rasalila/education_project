@@ -18,10 +18,11 @@ header {
 
   .logo img {
     width: 105px;
+    margin-top: 12px;
   }
 
-  .nav, form {
-    margin-top: -2px;
+  .nav {
+    margin-top: 12px;
   }
 
   .nav a {
@@ -39,53 +40,6 @@ header {
     color: rgb(0, 22, 137);
     border-bottom: 1px solid rgb(0, 22, 137);
   }
-
-  .switch-img {
-    width: 40px;
-    height: 40px;
-    margin: 2%;
-  }
-
-  form > div {
-    max-width: 360px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(211, 211, 211);
-    border-radius: 5px;
-    padding: 3px 4px 3px 8px;
-    margin-top: 3px;
-  }
-
-  form > div input {
-    width: 100%;
-    font-size: 1rem;
-    border: none;
-    outline: none;
-    padding-left: 5px;
-    color: rgb(60, 60, 60);
-  }
-
-  form > div input::placeholder {
-    font-size: 1rem;
-    line-height: 16px;
-  }
-
-  .loupe {
-    background: none;
-    border: none;
-    outline: none;
-  }
-
-  .loupe > img {
-    padding-bottom: 3px;
-  }
-
-  .loupe-mobile {
-    // position: absolute;
-    // display: none;
-    // position: relative;
-    // top: -30px;
-  }
 }
 
 // бургер-меню
@@ -97,7 +51,7 @@ header {
   position: relative;
   z-index: 1;
   cursor: pointer;
-  margin-top: -90px;
+  margin-top: -40px;
   left: 30%;
   transform: translateX(700%);
   border: none;
@@ -114,12 +68,12 @@ header {
   width: 100%;
   height: 4px;
   border-radius: 10px;
-  background: #000;
+  background: rgb(0, 0, 0);
 }
 
 .burger::before {
   top: 0;
-  box-shadow: 0 11px 0 #000;
+  box-shadow: 0 11px 0 rgb(0, 0, 0);
   transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
 }
 
@@ -179,77 +133,118 @@ header {
 // обложка
 .cover {
   width: 100%;
+  max-width: 1360px;
+  max-height: 750px;
+  height: 100%;
+  border-radius: 30px;
   background-color: rgb(40, 50, 112);
-  height: 469px;
+  padding: 0;
   color: white;
 }
 
+.cover-img {
+  max-width: 1360px;
+  width: 100%;
+  background-size: cover;
+  padding: 0;
+}
+
 .cover-section {
-  margin-top: 8%;
-  margin-left: 2%;
   width: 100%;
   height: 100%;
 }
 
 // текст
-.cover-title, .cover-text {
-  font-family: "Trebuchet MS";
+.cover-title, .cover-text, .button {
+  font-family: 'Gilroy', "Arial", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  margin-left: 40px;
 }
 
 .cover-title {
-  font-size: 36px;
-  line-height: 44px;
+  max-width: 640px;
   text-align: start;
+
+  height: 114px;
+
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 110%;
+
+  margin-top: 120px;
 }
 
 .cover-text {
+  /* Повышаем качество жизни! */
   font-size: 18px;
   line-height: 30px;
+
+  height: 36px;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .lower, .upper {
-  max-width: 500px;
+  max-width: 644px;
 }
 
 .upper {
-  font-size: 32px;
-  line-height: 37px;
-  text-decoration: underline;
+  /* Онлайн-консультации */
+  font-weight: 400;
+  
+  font-size: 18px;
+  line-height: 21px;
+
+  margin-top: 60px;
+}
+
+.button {
+  width: 188px;
+  height: 43px;
+
+  border-radius: 100px;
+  margin-top: 30px;
+  padding: 7px 1px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+
+  color: rgb(0, 22, 137);
 }
 
 .cover-logo {
-  margin-top: 8%;
-  margin-right: 10%;
-}
-
-.cover-img {
-  max-width: 1200px;
-  background-size: cover;
+  max-width: 582px;
+  max-height: 750px;
+  width: 100%;
+  height: 100%;
 }
 
 // см разрешение 992
 @media screen and (max-width: 1200px) {
-  .container {
-    max-width: 1000px;
-  }
-
-  .cover {
-    height: 400px;
-  }
-
   .cover-logo {
-    max-width: 25%;
-  }
-
-  .switch-img {
-    margin: 2% 4px 2% 4px;
+    max-width: 40%;
   }
 
   .cover-title, .cover-text {
     text-align: start;
-    margin-left: 10%;
+  }
+
+  .upper {
+    font-size: 14px;
+  }
+
+  .cover-title {
+    font-size: 45px;
+    margin-top: 80px;
+  }
+
+  .lower {
+    font-size: 20px;
   }
 }
 
@@ -261,32 +256,33 @@ header {
     align-content: center;
   }
 
-  .cover-logo {
-    margin-top: 3%;
-  }
-
   .div-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 2px;
   }
 
-  header .logo {
-    margin-top: 12px;
+  .upper {
+    font-size: 12px;
   }
 
-  .switch-img > img {
-    margin-top: 5px;
+  .cover-title {
+    font-size: 35px;
+    margin-top: 35px;
+    max-width: 450px;
   }
 
-  .form-search {
-    margin-top: 3px;
+  .lower {
+    font-size: 16px;
   }
 }
 
 // см разрешение 576
 @media screen and (max-width: 768px) {
   .cover {
-    max-height: 600px;
-    height: 600px;
+    max-height: 820px;
+    height: 820px;
   }
 
   .cover-img {
@@ -295,64 +291,42 @@ header {
   }
 
   .cover-logo {
-    max-width: 40%;
+    max-width: 41%;
+    min-width: 275px;
+    margin: auto;
+    margin-top: 20px;
   }
 
-  .switch-img {
-    display: none;
+  .cover-section {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .button {
+    margin: 4px 0 20px 0;
   }
 
-  header form > div {
-    margin-top: 10px;
+  .upper, .cover-title, .lower, .button  {
+    align-self: center;
+  }
+  .cover-title, .cover-text  {
+    margin-left: 0;
   }
 
   header .nav {
     font-size: 0.75rem;
     gap: 3px;
     padding: 0;
-    margin-top: 16px;
-  }
-
-  header .div-logo {
-    margin-top: -15px;
-  }
-
-  header .logo {
-    margin-top: 18px;
   }
 
   .nav a {
     gap: 14px;
   }
-  .form-search {
-    margin-top: 15px;
-  }
 
   .cover-title, .cover-text {
     text-align: start;
-    margin-left: 22%;
-}
-}
-
-// см разрешение 480
-@media screen and (max-width: 650px) {
-  .cover-title, .cover-text {
-    margin-left: 18%;
-  }
-
-  .cover-section {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cover-logo {
-    margin-top: 3%;
-  }
-
-  header .logo {
     text-align: center;
   }
-
   header .nav a {
     display: none;
   }
@@ -367,21 +341,47 @@ header {
   }
 }
 
+
+// см разрешение 480
+@media screen and (max-width: 650px) {
+  .cover-title {
+    text-align: center;
+  }
+
+  .cover-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cover-logo {
+    margin-top: 20px;
+    min-width: 275px;
+  }
+  
+  header .logo {
+    text-align: center;
+  }
+
+  header .nav a {
+    display: none;
+  }
+
+  .cover-logo{
+    margin-top: 20px;
+  }
+}
+
 @media screen and (max-width: 576px){
   .cover-title, .cover-text {
-    text-align: start;
     max-width: 470px;
-    margin-left: 14%;
   }
-  .cover-section {
-    margin-top: 10%;
+
+  .cover-logo{
+    margin-top: 20px;
   }
 }
 
 @media screen and (max-width: 490px) {
-  .cover-section {
-    margin-top: 13%;
-  }
   .burger {
     left: 20%;
   }
@@ -390,12 +390,14 @@ header {
     left: 50%;
   }
 
-  .cover-title, .cover-text {
-    margin-left: 3%;
+  .cover-title {
+  font-size: 30px;
+  max-width: 300px;
   }
 
   .cover-logo{
-    margin-top: 40px;
+    margin-top: 20px;
+    min-width: 275px;
   }
 }
 
@@ -415,6 +417,6 @@ header {
 
 @media screen and (max-width: 388px) {
   .burger {
-    top: -18px;
+    top: -15px;
   }
 }
