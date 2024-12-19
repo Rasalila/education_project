@@ -4,9 +4,9 @@
 @use "../base/normalize";
 
 .footer {
-  @include mixin.setka;
+  // @include mixin.setka;
   &__text {
-    font-size: variables.$font-size-medium;
+    // font-size: variables.$font-size-medium;
     color: red;
     text-decoration: none;
   }

@@ -10,23 +10,68 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="stylesheet" href=".assets/style/normalize.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="stylesheet" href="./assets/sass/app.scss" />
+    <link rel="icon" href="./assets/img/logo-cut.png" type="image/png">
 
-    <title>Aducation</title>
+    <title>ГОТОВИМ НАСТОЯЩИХ ПРОФЕССИОНАЛОВ!</title>
   </head>
 
   <body>
     <!-- начало "Шапка" Расалила-->
-    <header class="header">
+    <header class="header container-fluid">
+      <div class="container set">
+            <div class="div-logo row align-items-sm-start justify-content-start">
+                  <a href="#" class="logo col-2">
+                        <img src="./assets/img/logo.png" alt="союз нэо">
+                  </a>
+                  
+                  <!-- md >= 768px, lg >= 992px, xl >= 1200px -->
+                  <nav class="nav d-flex justify-content-between align-items-center col-7 col-sm-8 col-md-7 col-lg-6 col-xl-5">
+                        <a href="#">Специалисты</a>
+                        <a href="#">Обучение и трудоустройство</a>
+                        <a href="#">Отзывы</a>
+                        <a href="#">Контакты</a>
+                  </nav>
 
+                  
+                  <div class="menu">
+                        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                        <label for="burger-checkbox" class="burger"></label>
+                        <ul class="menu-list">
+                              <li><a href="#" class="menu-item">О компании</a><li>
+                              <li><a href="#" class="menu-item">Направления</a><li>
+                              <li><a href="#" class="menu-item">Услуги</a><li>
+                              <li><a href="#" class="menu-item">Обучение</a><li>
+                              <li><a href="#" class="menu-item">Трудоустройство</a><li></li>
+                        </ul>
+                    </div>
+            </div>
+      </div>
     </header>
     <!-- конец "Шапка" Расалила-->
     <main>
       <!-- "Обложка" Расалила -->
-      <div class="cover">
+      <div class="cover container-fluid">
 
+            <div class="cover-img container d-flex justify-content-space-between justify-content-lg-start justify-content-sm-center">
+                  <div class="cover-section ">
+                        <p class="cover-text upper">Онлайн-консультации</p>
+                        <h1 class="cover-title">Психологический центр Союза «НЭО»</h1>
+                        <p class="cover-text lower">Повышаем качество жизни!</p>
+                        <button class="btn btn-light button">Выбрать специалиста
+                              <!-- <a name="#choose"></a> -->
+                        </button>
+                  </div>
+
+                  <img src="./assets/img/cover-img.png" alt="фото" class="cover-logo">
+
+                  
+                  <!-- <p><a name="choose"></a></p> //здесь нет текста , ВАЖНО!!!!
+                  <h1>Ля-ля-ля три рубля</h1>
+                     <p><a href="#choose">Наверх</a></p>//а это переход на top -->
+            </div>
       </div>
       <!-- конец "Обложка" Расалила-->
 
@@ -68,27 +113,15 @@
     </main>
 
       <!-- начало "Футер" Настя-->
-      <footer class="footer">
-        <div class="footer-logo">
-          <img src="assets/img/mainlogo.png" alt="company_logo">
-        </div>
-        <div class="social">
-          <a href="#"><i class="social-icon-telegram"></i></a>
-          <a href="#"><i class="social-icon-mail"></i></a>
-        </div>
-              <div class="list">
-                  <p class="footer__text"><a href="#">Специалисты</a></p>
-                  <p class="footer__text"><a href="#">Отзывы</a></p>
-                  <p class="footer__text"><a href="#">Трудоустройство</a></p>
-              </div>
-      </footer>
+    <footer class="footer">
+      
+    </footer>
     <!-- конец "Футер" Настя-->
 
     <script
       src="./assets/bootstrap/bootstrap.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+      <script src="./index.js"></script>
   </body>
 </html>
-
-
