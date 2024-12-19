@@ -1,7 +1,6 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
-// @use "../base/fonts";
-// @use "../base/normalize";
+
 
 .footer {
   background-color: rgb(2, 17, 95);
@@ -15,10 +14,17 @@
     align-items: center;
     justify-content: space-between;
   }
+  .footer__logo {
+    height: 8.8125rem; /* 141px */
+    width: 8.8125rem; /* 141px */
+  }
   .footer__wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .footer__nav {
+    margin-left: 4.5625rem; /* 73px */
   }
   .footer__nav-list {
     margin: 0;
@@ -36,6 +42,15 @@
     color: variables.$text-color-btn;
     text-decoration: none;
   }
+  .footer__nav-link:hover {
+    transition: 0.3s;
+    color: variables.$text-color-accent;
+  }
+  .footer__nav-link:active {
+    transition: 0.3s;
+    font-size: 1.015rem;
+    color: variables.$text-color-active;
+  }
   .footer__contacts {
     display: flex;
     align-items: center;
@@ -43,11 +58,17 @@
   .footer__contacts * {
     margin: 0;
   }
+  .footer__contacts > address {
+    margin-right: 0.8125rem; /* 13px */
+  }
   .footer__contact-icon {
     fill: rgb(255, 255, 255);
   }
-  .footer__contact-icon:first-child{
-  margin-right: 0.8125rem; /* 13px */
+  .footer__contact-icon:hover {
+    fill: variables.$text-color-accent;
+  }
+  .footer__contact-icon:active {
+    fill: variables.$text-color-active;
   }
   #email {
     height: 1.125rem; /* 18px */
@@ -65,6 +86,9 @@
     .footer__nav-list, .footer__contacts{
       padding: 0;
       margin-bottom: 2rem;
+    }
+    .footer__nav {
+      margin-left: 0;
     }
   }
 }
