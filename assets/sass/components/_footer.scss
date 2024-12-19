@@ -39,6 +39,7 @@
   }
   .footer__nav-link {
     @include mixin.text;
+    font-size: 0.875rem;/* 14px */
     color: variables.$text-color-btn;
     text-decoration: none;
   }
