@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin-top: 7.4rem;/*119px*/
   padding: 0;
+  @include mixin.max-w;
   
   .staff__row{
     margin-left: 0;

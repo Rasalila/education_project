@@ -4,6 +4,7 @@
 @use "../base/normalize";
 
 .reviews {
+  @include mixin.max-w;
   text-align: center;
   margin-top: 120px;
 

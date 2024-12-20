@@ -80,7 +80,7 @@
       <!-- конец "О компании" Виталия-->
 
       <!-- начало "Специалисты" Мария-->
-      <section class="container-fluid staff">
+      <section class="container-fluid staff" id="staff">
         <!-- Title section "Staff" -->
         <div class="row staff__row">
           <div class="col">
@@ -885,11 +885,11 @@
       <!-- конец "Специалисты Мария-->
 
       <!-- начало "Трудоустройство" Александра-->
-      <div class="job"></div>
+      <div class="job" id="job"></div>
       <!-- конец "Трудоустройство" Александра-->
 
       <!-- начало "Отзывы" Диана-->
-      <div class="reviews">
+      <div class="reviews" id="reviews">
         <h2 class="reviews__title">Отзывы о специалистах</h2>
         <div
           id="carouselExampleIndicators"
@@ -1642,17 +1642,63 @@
 
     <!-- начало "Футер" Настя-->
     <footer class="footer">
-      <div class="footer-logo">
-        <img src="assets/img/mainlogo.png" alt="company_logo" />
-      </div>
-      <div class="social">
-        <a href="#"><i class="social-icon-telegram"></i></a>
-        <a href="#"><i class="social-icon-mail"></i></a>
-      </div>
-      <div class="list">
-        <p class="footer__text"><a href="#">Специалисты</a></p>
-        <p class="footer__text"><a href="#">Отзывы</a></p>
-        <p class="footer__text"><a href="#">Трудоустройство</a></p>
+      <div class="footer__box">
+        <div class="footer__wrap">
+          <!-- Logo  -->
+          <a class="footer__logo" href="index.html" target="_blank"
+            ><img src="./assets/icons/logo_footer.svg" alt="company_logo" />
+          </a>
+          <!-- Navigation -->
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="index.html#staff" class="footer__nav-link">
+                  Специалисты</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a href="index.html#job" class="footer__nav-link"
+                  >Обучение и трудоустройство</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a href="index.html#reviews" class="footer__nav-link">Отзывы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a
+                  href="./assets/docs/terms_of_service.pdf"
+                  target="_blank"
+                  class="footer__nav-link"
+                  >Пользовательское соглашение</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a
+                  href="./assets/docs/privacy_policy.pdf"
+                  target="_blank"
+                  class="footer__nav-link"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Contacts -->
+        <div class="footer__contacts">
+          <address>
+            <a class="footer__email" href="mailto:edusee@bk.ru" target="_blank">
+              <svg class="footer__contact-icon" id="email">
+                <use xlink:href="./assets/icons/contacts.svg#email"></use>
+              </svg>
+            </a>
+          </address>
+          <a href="https://t.me/psychologyacademycenter" class="footer__email">
+            <svg class="footer__contact-icon" id="telegram">
+              <use xlink:href="./assets/icons/contacts.svg#telegram"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
     <!-- конец "Футер" Настя-->
