@@ -1,66 +1,95 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
-@use "../base/fonts";
-@use "../base/normalize";
+
 
 .footer {
-  // @include mixin.setka;
-  &__text {
-    // font-size: variables.$font-size-medium;
-    color: red;
+  background-color: rgb(2, 17, 95);
+  border: 1px solid rgb(0, 22, 137);
+
+  .footer__box {
+    @include mixin.max-w;
+    padding-left: 1.8rem;/* 29px */
+    padding-right: 4.125rem;/* 66px */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__logo {
+    height: 8.8125rem; /* 141px */
+    width: 8.8125rem; /* 141px */
+  }
+  .footer__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__nav {
+    margin-left: 4.5625rem; /* 73px */
+  }
+  .footer__nav-list {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    list-style: none;
+  }
+  .footer__nav-item {
+  }
+  .footer__nav-link {
+    @include mixin.text;
+    font-size: 0.875rem;/* 14px */
+    color: variables.$text-color-btn;
     text-decoration: none;
   }
-}
-
-//.footer-logo {}
-.social {
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-.social-icon-telegram {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-    margin: 0 8px;
-    color: inherit;
-    opacity: 0.75;
-}
-.social-icon-mail {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-    margin: 0 8px;
-    color: inherit;
-    opacity: 0.75;
-}
-
-  .list a:hover {
-    opacity: 1;
+  .footer__nav-link:hover {
+    transition: 0.3s;
+    color: variables.$text-color-accent;
   }
-  
-  .footer .social > a:hover {
-    opacity: 0.9;
+  .footer__nav-link:active {
+    transition: 0.3s;
+    font-size: 1.015rem;
+    color: variables.$text-color-active;
   }
-  
-.list {
-  display: inline;
-    // display: flex;
-    // justify-content: space-evenly;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 0;
+  .footer__contacts {
+    display: flex;
+    align-items: center;
+  }
+  .footer__contacts * {
+    margin: 0;
+  }
+  .footer__contacts > address {
+    margin-right: 0.8125rem; /* 13px */
+  }
+  .footer__contact-icon {
+    fill: rgb(255, 255, 255);
+  }
+  .footer__contact-icon:hover {
+    fill: variables.$text-color-accent;
+  }
+  .footer__contact-icon:active {
+    fill: variables.$text-color-active;
+  }
+  #email {
+    height: 1.125rem; /* 18px */
+    width: 1.125rem; /* 18px */
+  }
+  #telegram {
+    height: 0.9375rem; /* 15px */
+    width: 0.9375rem; /* 15px */
+  }
+  @media screen and (max-width: 890px){
+    .footer__box, .footer__wrap  {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .footer__nav-list, .footer__contacts{
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+    .footer__nav {
+      margin-left: 0;
+    }
+  }
 }
