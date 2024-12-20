@@ -13,7 +13,7 @@
     <link rel="stylesheet" href=".assets/style/normalize.css" />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="stylesheet" href="./assets/sass/app.scss" />
-    <link rel="icon" href="./assets/img/logo-cut.png" type="image/png">
+    <link rel="icon" href="./assets/img/logo-cut.png" type="image/png" />
 
     <title>ГОТОВИМ НАСТОЯЩИХ ПРОФЕССИОНАЛОВ!</title>
   </head>
@@ -64,7 +64,6 @@
                               <!-- <a name="#choose"></a> -->
                         </button>
                   </div>
-
                   <img src="./assets/img/cover-img.png" alt="фото" class="cover-logo">
 
                   
@@ -76,11 +75,96 @@
       <!-- конец "Обложка" Расалила-->
 
       <!-- начало "О компании" Виталия-->
-      <div class="about"></div>
+      <!-- начало "О компании" -->
+      <section class="about">
+        <div class="container container-fluid">
+          <div class="row">
+            <h2 class="about__title">О компании</h2>
+            <div class="col-md-8 text-md-left">
+              <p class="about__text-size">
+                Психологический центр Союза «НЭО» входит в состав СОЮЗА
+                ЭКСПЕРТОВ В СФЕРЕ ПОДГОТОВКИ КАДРОВ И ИХ ИНТЕГРАЦИИ В НАУКУ,
+                ОБРАЗОВАНИЕ И РЕАЛЬНЫЙ СЕКТОР ЭКОНОМИКИ.
+              </p>
+              <p>
+                Наш центр психологической помощи — это пространство, где забота
+                и профессионализм переплетаются для поддержки вашего
+                психологического благополучия.
+              </p>
+            </div>
+            <div class="col-md-4 m-auto d-flex justify-content-center">
+              <img
+                src="./assets/img/image_logo.png"
+                alt="Баннер"
+                class="about__image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- конец "О компании" -->
+          <!-- начало "Направления деятельности" -->
+      <section class="activities">
+        <div class="container">
+          <h2 class="activities__title">Направления деятельности</h2>
+          <p class="activities__description col-md-8">
+            Мы предоставляем индивидуальные консультации, терапевтическую
+            поддержку и психологические услуги, основанные на современных
+            методиках и личном подходе к каждому клиенту.
+          </p>
+          <p>
+            Наша миссия — помогать вам на пути к гармонии и эмоциональному
+            здоровью.
+          </p>
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="activities__list">
+                <li class="activities__item">Индивидуальная психотерапия</li>
+                <li class="activities__item">Семейная психотерапия</li>
+                <li class="activities__item">Групповая психотерапия</li>
+                <li class="activities__item">
+                  Консультирование и психотерапия детей и подростков
+                </li>
+                <li class="activities__item">Коучинг</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="activities__info">
+                <div class="activities__rectangle1">
+                  Режим и график работы: <br />
+                  Понедельник - пятница <br />с 9:00 до 18:00
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="activities__list">
+                <li class="activities__item">
+                  Бесплатная психологическая помощь женщинам, попавшим в трудную
+                  жизненную ситуацию
+                </li>
+                <li class="activities__item">
+                  Бесплатная психологическая помощь участникам СВО
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="activities__info">
+                <div class="activities__rectangle2">
+                  Льготные часы: <br />Вторник с 13:00 до 15:00, <br />Четверг с
+                  13:00 до 15:00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- конец "Направления деятельности" -->
       <!-- конец "О компании" Виталия-->
 
       <!-- начало "Специалисты" Мария-->
-      <section class="container-fluid staff">
+      <section class="container-fluid staff" id="staff">
         <!-- Title section "Staff" -->
         <div class="row staff__row">
           <div class="col">
@@ -885,11 +969,11 @@
       <!-- конец "Специалисты Мария-->
 
       <!-- начало "Трудоустройство" Александра-->
-      <div class="job"></div>
+      <div class="job" id="job"></div>
       <!-- конец "Трудоустройство" Александра-->
 
       <!-- начало "Отзывы" Диана-->
-      <div class="reviews">
+      <div class="reviews" id="reviews">
         <h2 class="reviews__title">Отзывы о специалистах</h2>
         <div
           id="carouselExampleIndicators"
@@ -1642,17 +1726,63 @@
 
     <!-- начало "Футер" Настя-->
     <footer class="footer">
-      <div class="footer-logo">
-        <img src="assets/img/mainlogo.png" alt="company_logo" />
-      </div>
-      <div class="social">
-        <a href="#"><i class="social-icon-telegram"></i></a>
-        <a href="#"><i class="social-icon-mail"></i></a>
-      </div>
-      <div class="list">
-        <p class="footer__text"><a href="#">Специалисты</a></p>
-        <p class="footer__text"><a href="#">Отзывы</a></p>
-        <p class="footer__text"><a href="#">Трудоустройство</a></p>
+      <div class="footer__box">
+        <div class="footer__wrap">
+          <!-- Logo  -->
+          <a class="footer__logo" href="index.html" target="_blank"
+            ><img src="./assets/icons/logo_footer.svg" alt="company_logo" />
+          </a>
+          <!-- Navigation -->
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="index.html#staff" class="footer__nav-link">
+                  Специалисты</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a href="index.html#job" class="footer__nav-link"
+                  >Обучение и трудоустройство</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a href="index.html#reviews" class="footer__nav-link">Отзывы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a
+                  href="./assets/docs/terms_of_service.pdf"
+                  target="_blank"
+                  class="footer__nav-link"
+                  >Пользовательское соглашение</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a
+                  href="./assets/docs/privacy_policy.pdf"
+                  target="_blank"
+                  class="footer__nav-link"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Contacts -->
+        <div class="footer__contacts">
+          <address>
+            <a class="footer__email" href="mailto:edusee@bk.ru" target="_blank">
+              <svg class="footer__contact-icon" id="email">
+                <use xlink:href="./assets/icons/contacts.svg#email"></use>
+              </svg>
+            </a>
+          </address>
+          <a href="https://t.me/psychologyacademycenter" class="footer__email">
+            <svg class="footer__contact-icon" id="telegram">
+              <use xlink:href="./assets/icons/contacts.svg#telegram"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
     <!-- конец "Футер" Настя-->
@@ -1660,6 +1790,8 @@
     <script
       src="./assets/bootstrap/bootstrap.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
       crossorigin="anonymous"></script>
       <script src="./index.js"></script>
   </body>
