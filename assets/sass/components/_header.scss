@@ -3,21 +3,420 @@
 @use "../base/fonts";
 @use "../base/normalize";
 
+header {
+  .container {
+    max-height: 70px;
+  }
 
-// .header {
-//   @include mixin.setka;
+  .div-logo {
+    height: 70px;
+  }
 
-//   .header__title {
-//     font-size: 90px;
-//     // color: blueviolet;
-//     color: variables.$text-color;
-//   }
-//   .header__subtitle {
-//     // color: blue;
-//     color: variables.$text-color;
-//   }
-//   .header__img {
-//     background-image: url("../img/34e974e177bb11ee9ad5ceda526c50ab_upscaled.jpeg");
-//     min-height: 200px;
-//   }
-// }
+  .logo {
+    width: 150px;
+  }
+
+  .logo img {
+    width: 105px;
+    margin-top: 12px;
+  }
+
+  .nav {
+    margin-top: 12px;
+  }
+
+  .nav a {
+    margin-top: 15px;
+    // 1rem = 16px
+    font-size: 0.8125rem;
+    line-height: 19px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid transparent;
+    transition: 0.5s all ease;
+  }
+
+  .nav a:hover {
+    color: rgb(0, 22, 137);
+    border-bottom: 1px solid rgb(0, 22, 137);
+  }
+}
+
+// бургер-меню
+.burger-checkbox, .burger, .menu-list {
+  display: none;
+}
+
+.burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-top: -40px;
+  left: 30%;
+  transform: translateX(700%);
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+
+.burger::before, .burger::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: rgb(0, 0, 0);
+}
+
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 rgb(0, 0, 0);
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+}
+
+.burger::after {
+  bottom: 0;
+  transition: bottom 0.3s 0.15s, transform 0.3s;
+}
+
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+}
+
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom 0.3s, transform 0.3s 0.15s;
+}
+
+.menu-list {
+  top: 0;
+  left: 56%;
+  position: absolute;
+  gap: 12px;
+  padding: 42px 0;
+  margin: 0;
+  background: rgb(255, 255, 255);
+  list-style-type: none;
+  transform: translateX(300%);
+  transition: 0.3s;
+  width: 200px;
+}
+
+.menu-item {
+  display: block;
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.5s all ease;
+}
+
+.menu-item:hover {
+  color: rgb(0, 22, 137);
+  border-bottom: 1px solid rgb(0, 22, 137);
+  background-color: rgb(209, 209, 209);
+}
+
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}
+
+// обложка
+.cover {
+  width: 100%;
+  max-width: 1360px;
+  max-height: 750px;
+  height: 100%;
+  border-radius: 30px;
+  background-color: rgb(40, 50, 112);
+  padding: 0;
+  color: white;
+}
+
+.cover-img {
+  max-width: 1360px;
+  width: 100%;
+  background-size: cover;
+  padding: 0;
+}
+
+.cover-section {
+  width: 100%;
+  height: 100%;
+}
+
+// текст
+.cover-title, .cover-text, .button {
+  font-family: 'Gilroy', "Arial", sans-serif;
+  font-style: normal;
+  margin-left: 40px;
+}
+
+.cover-title {
+  max-width: 640px;
+  text-align: start;
+
+  height: 114px;
+
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 110%;
+
+  margin-top: 120px;
+}
+
+.cover-text {
+  /* Повышаем качество жизни! */
+  font-size: 18px;
+  line-height: 30px;
+
+  height: 36px;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.lower, .upper {
+  max-width: 644px;
+}
+
+.upper {
+  /* Онлайн-консультации */
+  font-weight: 400;
+  
+  font-size: 18px;
+  line-height: 21px;
+
+  margin-top: 60px;
+}
+
+.button {
+  width: 188px;
+  height: 43px;
+
+  border-radius: 100px;
+  margin-top: 30px;
+  padding: 7px 1px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+
+  color: rgb(0, 22, 137);
+}
+
+.cover-logo {
+  max-width: 582px;
+  max-height: 750px;
+  width: 100%;
+  height: 100%;
+}
+
+// см разрешение 992
+@media screen and (max-width: 1200px) {
+  .cover-logo {
+    max-width: 40%;
+  }
+
+  .cover-title, .cover-text {
+    text-align: start;
+  }
+
+  .upper {
+    font-size: 14px;
+  }
+
+  .cover-title {
+    font-size: 45px;
+    margin-top: 80px;
+  }
+
+  .lower {
+    font-size: 20px;
+  }
+}
+
+// см разрешение 768
+@media screen and (max-width: 992px) {
+  .cover-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .div-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+  }
+
+  .upper {
+    font-size: 12px;
+  }
+
+  .cover-title {
+    font-size: 35px;
+    margin-top: 35px;
+    max-width: 450px;
+  }
+
+  .lower {
+    font-size: 16px;
+  }
+}
+
+// см разрешение 576
+@media screen and (max-width: 768px) {
+  .cover {
+    max-height: 820px;
+    height: 820px;
+  }
+
+  .cover-img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cover-logo {
+    max-width: 41%;
+    min-width: 275px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .cover-section {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .button {
+    margin: 4px 0 20px 0;
+  }
+
+  .upper, .cover-title, .lower, .button  {
+    align-self: center;
+  }
+  .cover-title, .cover-text  {
+    margin-left: 0;
+  }
+
+  header .nav {
+    font-size: 0.75rem;
+    gap: 3px;
+    padding: 0;
+  }
+
+  .nav a {
+    gap: 14px;
+  }
+
+  .cover-title, .cover-text {
+    text-align: start;
+    text-align: center;
+  }
+  header .nav a {
+    display: none;
+  }
+
+  // бургер-меню
+  .burger-checkbox, .burger {
+    display: none;
+  }
+
+  .menu-item, .burger {
+    display: block;
+  }
+}
+
+
+// см разрешение 480
+@media screen and (max-width: 650px) {
+  .cover-title {
+    text-align: center;
+  }
+
+  .cover-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cover-logo {
+    margin-top: 20px;
+    min-width: 275px;
+  }
+  
+  header .logo {
+    text-align: center;
+  }
+
+  header .nav a {
+    display: none;
+  }
+
+  .cover-logo{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .cover-title, .cover-text {
+    max-width: 470px;
+  }
+
+  .cover-logo{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .burger {
+    left: 20%;
+  }
+
+  .menu-list {
+    left: 50%;
+  }
+
+  .cover-title {
+  font-size: 30px;
+  max-width: 300px;
+  }
+
+  .cover-logo{
+    margin-top: 20px;
+    min-width: 275px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .burger {
+    left: 7%;
+  }
+
+  .header, .cover {
+    min-width: 375px;
+  }
+
+  .menu-list {
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .burger {
+    top: -15px;
+  }
+}

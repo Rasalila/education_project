@@ -3,14 +3,15 @@
 @use "abstracts/variables";
 @use "abstracts/mixin";
 
+@use "components/root";
 @use "components/header";
 @use "components/cover";
 @use "components/about";
-@use "components/stuff";
+@use "components/staff";
 @use "components/job";
 @use "components/reviews";
 @use "components/partners";
 @use "components/contact";
 @use "components/footer";
-
+@use "components/carousel";
 // Для подключения
