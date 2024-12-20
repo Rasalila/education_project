@@ -2,3 +2,40 @@
 @use "../abstracts/variables";
 @use "../base/fonts";
 @use "../base/normalize";
+
+.container-partners {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-top: 1px solid #00000030;
+    border-bottom: 1px solid #00000030;
+    align-items: center;
+    padding: 1%;
+}
+
+#community-logo {
+    height: 150px;
+    width: 150px;
+}
+
+#love-logo{
+    width: 430px;
+    height: 150px;
+    
+}
+
+#world-of-art-logo {
+    height: 150px;
+    width: 130px;
+}
+
+.gradient {
+    display: inline-block;
+    background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.75));
+    width: 100px;
+    height: 147px;
+    opacity: 0;
+}
+
+#community-logo:hover, #love-logo:hover, #world-of-art-logo:hover, .gradient:hover, .image-block-a:hover { opacity: .5; 
+}
