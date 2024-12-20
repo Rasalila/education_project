@@ -2,3 +2,28 @@
 @use "../abstracts/variables";
 @use "../base/fonts";
 @use "../base/normalize";
+
+.contact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .contact__text {
+    // margin-top: 120px;
+        color: black;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .contact__button {
+        height: 2rem;
+        width: 8rem;
+        box-sizing: border-box;
+        border: 1px solid rgb(215, 215, 215);
+        border-radius: 180px;
+        background: variables.$bg-darkblue;
+        font-size: 1rem;
+        color: variables.$text-color-btn;
+    }
+}
