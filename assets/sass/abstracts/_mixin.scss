@@ -1,5 +1,17 @@
+@use "./variables";
+
 @mixin attributes {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   padding-left:24px;
+}
+
+@mixin title{
+  font-family: variables.$ff;
+  font-weight: 900;
+}
+
+@mixin text{
+  font-family: variables.$ff;
+  font-weight: 600;
 }
