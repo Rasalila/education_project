@@ -1,11 +1,10 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
-@use "../base/fonts";
-@use "../base/normalize";
 
 .reviews {
+  @include mixin.max-w;
   text-align: center;
-  margin-top: 120px;
+  margin-top: 7.5rem; /* 120px */
 
   .reviews__cards-wrapper {
     display: flex;

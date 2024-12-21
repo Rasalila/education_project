@@ -1,7 +1,5 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
-@use "../base/fonts";
-@use "../base/normalize";
 
 header {
   .container {
@@ -131,23 +129,6 @@ header {
 }
 
 // обложка
-.cover {
-  width: 100%;
-  max-width: 1360px;
-  max-height: 750px;
-  height: 100%;
-  border-radius: 30px;
-  background-color: rgb(40, 50, 112);
-  padding: 0;
-  color: white;
-}
-
-.cover-img {
-  max-width: 1360px;
-  width: 100%;
-  background-size: cover;
-  padding: 0;
-}
 
 .cover-section {
   width: 100%;
@@ -156,7 +137,7 @@ header {
 
 // текст
 .cover-title, .cover-text, .button {
-  font-family: 'Gilroy', "Arial", sans-serif;
+  @include mixin.title;
   font-style: normal;
   margin-left: 40px;
 }
@@ -200,22 +181,6 @@ header {
   margin-top: 60px;
 }
 
-.button {
-  width: 188px;
-  height: 43px;
-
-  border-radius: 100px;
-  margin-top: 30px;
-  padding: 7px 1px;
-
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-
-  text-align: center;
-
-  color: rgb(0, 22, 137);
-}
 
 .cover-logo {
   max-width: 582px;

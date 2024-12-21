@@ -1,4 +1,45 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
-@use "../base/fonts";
-@use "../base/normalize";
+
+.cover {
+    width: 100%;
+    max-width: 85rem; /* 1360px */
+    max-height: 46.875rem; /* 750px */
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgb(40, 50, 112);
+    padding: 0;
+    color: white;
+  
+  .cover-img {
+    max-width: 85rem; /* 1360px */
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+  }
+  
+
+  .cover__wrap-btn{
+    width: 11.75rem; /* 188px */
+    height: 2.685rem; /* 43px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin-top: 30px;
+    padding: 7px 1px;
+    background-color: rgb(255, 255, 255);
+  }
+  .cover__button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+    text-wrap: nowrap;
+    
+
+    color: rgb(0, 22, 137);
+  }
+
+}
