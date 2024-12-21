@@ -86,6 +86,12 @@ color: rgb(153,153,153);
   font-family: variables.$ff;
   font-weight: 900;
 }
+@mixin title-h2 {
+  font-size: variables.$fs-h2;
+  color: variables.$title-color;
+  line-height: 2.375rem;
+  text-align: center;
+}
 @mixin text{
   font-family: variables.$ff;
   font-weight: 600;

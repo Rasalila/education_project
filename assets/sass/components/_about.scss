@@ -10,10 +10,7 @@
   
   .about__title {
     @include mixin.title;
-    font-size: variables.$fs-h2;
-    color: variables.$title-color;
-    line-height: 2.375rem;
-    text-align: center;
+    @include mixin.title-h2; 
   }
   .about__wrap {
     margin-top: 0.875rem;

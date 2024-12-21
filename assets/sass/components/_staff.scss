@@ -13,10 +13,7 @@
   }
   .staff__section-title {
     @include mixin.title;
-    font-size: variables.$fs-h2;
-    color: variables.$title-color;
-    line-height: 2.375rem; /* 38 px */
-    text-align: center;
+    @include mixin.title-h2; 
   }
   .staff__title {
     @include mixin.text;

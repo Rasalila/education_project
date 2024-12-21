@@ -21,9 +21,7 @@
   }
   .reviews__title {
     @include mixin.title;
-    font-size: variables.$fs-h2;
-    color: variables.$title-color;
-    line-height: 2.375rem;
+    @include mixin.title-h2; 
     margin-bottom: 35px;
   }
   .reviews__image-wrapper {
