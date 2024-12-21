@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="root" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +19,7 @@
       <div class="container set">
         <div class="row align-items-sm-start justify-content-start div-logo">
           <a href="index.html" class="col-2 logo">
-            <img src="./assets/img/logo-header.png" alt="союз нэо" />
+            <img src="./assets/icons/logo_header.svg" alt="союз нэо" />
           </a>
 
           <!-- md >= 768px, lg >= 992px, xl >= 1200px -->
@@ -59,56 +59,48 @@
     <!-- конец "Шапка" Расалила-->
     <main>
       <!-- "Обложка" Расалила -->
-      <div class="container-fluid cover">
-        <div
-          class="cover-img container d-flex justify-content-space-between justify-content-lg-start justify-content-sm-center"
-        >
-          <div class="cover-section">
-            <p class="cover-text upper">Онлайн-консультации</p>
-            <h1 class="cover-title">Психологический центр Союза «НЭО»</h1>
-            <p class="cover-text lower">Повышаем качество жизни!</p>
+      <section class="cover">
+        <div class="cover__wrap">
+          <div class="cover__wrap-text">
+            <p class="cover__text cover__text_upper">Онлайн-консультации</p>
+            <h1 class="cover__title">Психологический центр Союза «НЭО»</h1>
+            <p class="cover__text cover__text_lower">Повышаем качество жизни!</p>
             <div class="cover__wrap-btn">
               <a href="index.html#staff" class="cover__button">
                 Выбрать специалиста</a
               >
             </div>
           </div>
-          <img src="./assets/img/cover-img.png" alt="фото" class="cover-logo" />
-
-          <!-- <p><a name="choose"></a></p> //здесь нет текста , ВАЖНО!!!!
-                  <h1>Ля-ля-ля три рубля</h1>
-                     <p><a href="#choose">Наверх</a></p>//а это переход на top -->
+          <div class="cover__wrap-img">
+            <img src="./assets/img/cover-img.png" alt="фото" class="cover__img" />
+          </div>
         </div>
-      </div>
+      </section>
       <!-- конец "Обложка" Расалила-->
 
       <!-- начало "О компании" Виталия-->
       <!-- начало "О компании" -->
       <section class="about" id="about company">
-            <h2 class="about__title">О компании</h2>
-            <div class="about__wrap">
-              <div class="about__wrap-text">
-                <p class="about__text">
-                  Психологический центр Союза «НЭО» входит в состав СОЮЗА
-                  ЭКСПЕРТОВ В СФЕРЕ ПОДГОТОВКИ КАДРОВ И ИХ ИНТЕГРАЦИИ В НАУКУ,
-                  ОБРАЗОВАНИЕ И РЕАЛЬНЫЙ СЕКТОР ЭКОНОМИКИ.
-                </p>
-                <p class="about__text">
-                  Наш центр психологической помощи — это пространство, где забота
-                  и профессионализм переплетаются для поддержки вашего
-                  психологического благополучия.
-                </p>
-              </div>
-              <div class="about__wrap-img">
-                <img
-                  src="./assets/img/image_logo.png"
-                  alt="Баннер"
-                  class="about__image"
-                />
-              </div>
-            </div>
-            
-            
+        <h2 class="about__title">О компании</h2>
+        <div class="about__wrap">
+          <div class="about__wrap-text">
+            <p class="about__text">
+              Психологический центр Союза «НЭО» входит в состав СОЮЗА
+              ЭКСПЕРТОВ В СФЕРЕ ПОДГОТОВКИ КАДРОВ И ИХ ИНТЕГРАЦИИ В НАУКУ,
+              ОБРАЗОВАНИЕ И РЕАЛЬНЫЙ СЕКТОР ЭКОНОМИКИ.
+            </p>
+            <p class="about__text">
+              Наш центр психологической помощи — это пространство, где забота
+              и профессионализм переплетаются для поддержки вашего
+              психологического благополучия.
+            </p>
+          </div>
+          <div class="about__wrap-img">
+              <img
+              src="./assets/icons/banner.svg"
+              alt="Баннер"
+              class="about__img"
+            />
           </div>
         </div>
       </section>
@@ -1814,7 +1806,7 @@
       <div class="footer__box">
         <div class="footer__wrap">
           <!-- Logo  -->
-          <a href="index.html" class="footer__logo"><img src="./assets/icons/logo_footer.svg" alt="company_logo" /></a>
+          <a href="index.html"><img class="footer__logo" src="./assets/icons/logo_footer.svg" alt="company_logo" /></a>
 
           <!-- Navigation -->
           <nav class="footer__nav">

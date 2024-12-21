@@ -126,10 +126,16 @@
       justify-content: end;
     }
   }
+
+  @media screen and (max-width:570px) {
+    .staff__card-box {
+    margin: 2.8rem 1.5rem 0 1.5rem;
+    }
+  }
   @media screen and (max-width: 480px) {
+    
     .staff__card-box {
       grid-template-columns: repeat(auto-fit, minmax(15rem, 35rem));
-      margin: 2.8rem 0 0 0;
     }
     .staff__card {
       display: flex;

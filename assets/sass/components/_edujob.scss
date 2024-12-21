@@ -32,6 +32,10 @@
     color: variables.$text-color;
     line-height: 1rem;
   }
+
+  @media screen and (max-width:570px) {
+    padding: 0 1.5rem 0 1.5rem;
+  }
 }
 
 
