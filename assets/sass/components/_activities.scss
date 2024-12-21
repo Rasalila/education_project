@@ -20,12 +20,12 @@
   .activities__text {
     @include mixin.text;
     font-size: variables.$desc-font-size;
-    line-height: 24px;
+    line-height: 1.5rem;
     width: 100%;
   }
   .activities__wrap {
     display: grid;
-    grid-template-columns: 1fr minmax(325px, 366px);
+    grid-template-columns: 1fr minmax(20.3125rem, 22.875rem);
     gap: 1.25rem;
     margin-bottom: 1.25rem;
   }
