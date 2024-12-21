@@ -15,21 +15,21 @@
 
   <body>
     <!-- начало "Шапка" Расалила-->
-    <header class="header container-fluid">
+    <header class="container-fluid header">
       <div class="container set">
-        <div class="div-logo row align-items-sm-start justify-content-start">
-          <a href="#" class="logo col-2">
+        <div class="row align-items-sm-start justify-content-start div-logo">
+          <a href="index.html" class="col-2 logo">
             <img src="./assets/img/logo.png" alt="союз нэо" />
           </a>
 
           <!-- md >= 768px, lg >= 992px, xl >= 1200px -->
           <nav
-            class="nav d-flex justify-content-between align-items-center col-7 col-sm-8 col-md-7 col-lg-6 col-xl-5"
+            class="d-flex justify-content-between align-items-center col-7 col-sm-8 col-md-7 col-lg-6 col-xl-5 nav"
           >
-            <a href="#">Специалисты</a>
-            <a href="#">Обучение и трудоустройство</a>
-            <a href="#">Отзывы</a>
-            <a href="#">Контакты</a>
+            <a href="index.html#staff">Специалисты</a>
+            <a href="index.html#job">Обучение и трудоустройство</a>
+            <a href="index.html#reviews">Отзывы</a>
+            <a href="index.html#contacts">Контакты</a>
           </nav>
 
           <div class="menu">
@@ -40,16 +40,17 @@
             />
             <label for="burger-checkbox" class="burger"></label>
             <ul class="menu-list">
-              <li><a href="#" class="menu-item">О компании</a></li>
+              <li><a href="index.html#about company" class="menu-item">О компании</a></li>
               <li></li>
-              <li><a href="#" class="menu-item">Направления</a></li>
+              <li><a href="index.html#activities" class="menu-item">Услуги</a></li>
               <li></li>
-              <li><a href="#" class="menu-item">Услуги</a></li>
+              <li><a href="index.html#staff" class="menu-item">Специалисты</a></li>
               <li></li>
-              <li><a href="#" class="menu-item">Обучение</a></li>
+              <li><a href="index.html#job" class="menu-item">Обучение и трудоустройство</a></li>
               <li></li>
-              <li><a href="#" class="menu-item">Трудоустройство</a></li>
-              <li></li>
+              <li><a href="index.html#reviews" class="menu-item">Отзывы</a></li>
+              <li><a href="index.html#partners" class="menu-item">Партнеры</a></li>
+              <li><a href="index.html#contacts" class="menu-item">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -83,87 +84,82 @@
 
       <!-- начало "О компании" Виталия-->
       <!-- начало "О компании" -->
-      <section class="about">
-        <div class="container container-fluid">
-          <div class="row">
+      <section class="about" id="about company">
             <h2 class="about__title">О компании</h2>
-            <div class="col-md-8 text-md-left">
-              <p class="about__text-size">
-                Психологический центр Союза «НЭО» входит в состав СОЮЗА
-                ЭКСПЕРТОВ В СФЕРЕ ПОДГОТОВКИ КАДРОВ И ИХ ИНТЕГРАЦИИ В НАУКУ,
-                ОБРАЗОВАНИЕ И РЕАЛЬНЫЙ СЕКТОР ЭКОНОМИКИ.
-              </p>
-              <p>
-                Наш центр психологической помощи — это пространство, где забота
-                и профессионализм переплетаются для поддержки вашего
-                психологического благополучия.
-              </p>
+            <div class="about__wrap">
+              <div class="about__wrap-text">
+                <p class="about__text">
+                  Психологический центр Союза «НЭО» входит в состав СОЮЗА
+                  ЭКСПЕРТОВ В СФЕРЕ ПОДГОТОВКИ КАДРОВ И ИХ ИНТЕГРАЦИИ В НАУКУ,
+                  ОБРАЗОВАНИЕ И РЕАЛЬНЫЙ СЕКТОР ЭКОНОМИКИ.
+                </p>
+                <p class="about__text">
+                  Наш центр психологической помощи — это пространство, где забота
+                  и профессионализм переплетаются для поддержки вашего
+                  психологического благополучия.
+                </p>
+              </div>
+              <div class="about__wrap-img">
+                <img
+                  src="./assets/img/image_logo.png"
+                  alt="Баннер"
+                  class="about__image"
+                />
+              </div>
             </div>
-            <div class="col-md-4 m-auto d-flex justify-content-center">
-              <img
-                src="./assets/img/image_logo.png"
-                alt="Баннер"
-                class="about__image"
-              />
-            </div>
+            
+            
           </div>
         </div>
       </section>
       <!-- конец "О компании" -->
       <!-- начало "Направления деятельности" -->
-      <section class="activities">
-        <div class="container">
-          <h2 class="activities__title">Направления деятельности</h2>
-          <p class="activities__description col-md-8">
+      <section class="activities" id="activities">
+        <h2 class="activities__title">Направления деятельности</h2>
+        <div class="activities__wrap-description">
+          <p class="activities__text">
             Мы предоставляем индивидуальные консультации, терапевтическую
             поддержку и психологические услуги, основанные на современных
             методиках и личном подходе к каждому клиенту.
           </p>
-          <p>
+          <p class="activities__text">
             Наша миссия — помогать вам на пути к гармонии и эмоциональному
             здоровью.
           </p>
-          <div class="row">
-            <div class="col-md-8">
-              <ul class="activities__list">
-                <li class="activities__item">Индивидуальная психотерапия</li>
-                <li class="activities__item">Семейная психотерапия</li>
-                <li class="activities__item">Групповая психотерапия</li>
-                <li class="activities__item">
-                  Консультирование и психотерапия детей и подростков
-                </li>
-                <li class="activities__item">Коучинг</li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <div class="activities__info">
-                <div class="activities__rectangle1">
-                  Режим и график работы: <br />
-                  Понедельник - пятница <br />с 9:00 до 18:00
-                </div>
-              </div>
-            </div>
+        </div>
+        
+        <div class="activities__wrap">
+          <ul class="activities__list">
+            <li class="activities__text activities__text_smaller activities__item">Психологическое консультирование</li>
+            <li class="activities__text activities__text_smaller activities__item">Индивидуальная психотерапия</li>
+            <li class="activities__text activities__text_smaller activities__item">Семейная психотерапия</li>
+            <li class="activities__text activities__text_smaller activities__item">Групповая психотерапия</li>
+            <li class="activities__text activities__text_smaller activities__item">
+              Консультирование и психотерапия детей и подростков
+            </li>
+            <li class="activities__text activities__text_smaller activities__item">Коучинг</li>
+          </ul>
+      
+          <div class="activities__info">
+            <p class="activities__text activities__text_smaller">
+              Режим и график работы: <br />
+              Пн-пт 9:00-18:00
+            </p>
           </div>
-          <div class="row">
-            <div class="col-md-8">
-              <ul class="activities__list">
-                <li class="activities__item">
-                  Бесплатная психологическая помощь женщинам, попавшим в трудную
-                  жизненную ситуацию
-                </li>
-                <li class="activities__item">
-                  Бесплатная психологическая помощь участникам СВО
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <div class="activities__info">
-                <div class="activities__rectangle2">
-                  Льготные часы: <br />Вторник с 13:00 до 15:00, <br />Четверг с
-                  13:00 до 15:00
-                </div>
-              </div>
-            </div>
+        </div>
+
+        <div class="activities__wrap">
+          <ul class="activities__list">
+            <li class="activities__text activities__text_smaller activities__item">
+              Бесплатная психологическая помощь женщинам, попавшим в трудную
+              жизненную ситуацию
+            </li>
+            <li class="activities__text activities__text_smaller activities__item">
+              Бесплатная психологическая помощь участникам СВО
+            </li>
+          </ul>
+          <div class="activities__info">
+            <p class="activities__text activities__text_smaller">Льготные часы: <br />Вт 13:00-15:00,<br />Чт 13:00-15:00</p>
           </div>
         </div>
       </section>
@@ -980,7 +976,7 @@
       <!-- конец "Трудоустройство" Александра-->
 
       <!-- начало "Отзывы" Диана-->
-      <div class="reviews" id="reviews">
+      <section class="reviews" id="reviews">
         <h2 class="reviews__title">Отзывы о специалистах</h2>
         <div
           id="carouselExampleIndicators"
@@ -1714,20 +1710,38 @@
             </button>
           </div>
         </div>
-      </div>
+      </section>
       <!-- конец "Отзывы" Диана-->
 
       <!-- начало "Партнёры" Оля Б.-->
-      <div class="partners"></div>
+      <div class="partners" id="partners"></div>
       <!-- конец "Партнёры" Оля Б.-->
 
       <!-- начало "Связь" Оля-->
-      <div class="contact">
-        <p class="contact__text">Остались вопросы? <br />Свяжитесь с нами</p>
-        <form action="https://t.me/psychologyacademycenter" target="_blank">
-          <button class="contact__button">Связаться</button>
-        </form>
-      </div>
+      <section class="contacts" id="contacts">
+        <div class="contacts__wrap-text">
+          <p class="contacts__text">Остались вопросы?</p>
+          <p class="contacts__text">Свяжитесь с нами</p>
+        </div>
+        <div class="contacts__wrap-links">
+          <address class="btn btn-secondary contacts__button contacts__button_small">
+            <a href="mailto:edusee@bk.ru" target="_blank">
+              <svg class="icons" id="email-icon">
+                <use xlink:href="./assets/icons/contacts.svg#email"></use>
+              </svg>
+              edusee@bk.ru
+            </a>
+          </address>
+          <div class="btn btn-secondary contacts__button">
+            <a href="https://t.me/psychologyacademycenter">
+              <svg class="icons" id="tg-icon">
+                <use xlink:href="./assets/icons/contacts.svg#telegram"></use>
+              </svg>
+              @psychologyacademycenter
+            </a>
+          </div>
+        </div>
+      </section>
       <!-- конец "Связь" Оля-->
     </main>
 
@@ -1780,13 +1794,13 @@
         <div class="footer__contacts">
           <address>
             <a class="footer__email" href="mailto:edusee@bk.ru" target="_blank">
-              <svg class="footer__contact-icon" id="email">
+              <svg class="icons" id="email-icon">
                 <use xlink:href="./assets/icons/contacts.svg#email"></use>
               </svg>
             </a>
           </address>
           <a href="https://t.me/psychologyacademycenter" class="footer__email">
-            <svg class="footer__contact-icon" id="telegram">
+            <svg class="icons" id="tg-icon">
               <use xlink:href="./assets/icons/contacts.svg#telegram"></use>
             </svg>
           </a>

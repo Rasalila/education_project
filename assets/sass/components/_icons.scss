@@ -1,0 +1,21 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixin";
+
+.icons {
+    fill: rgb(255, 255, 255);
+    margin-right: 0.5rem;
+  }
+.icons:hover {
+    fill: variables.$text-color-accent;
+  }
+  .icons:active {
+    fill: variables.$text-color-active;
+  }
+  #email-icon {
+    height: 1.125rem; /* 18px */
+    width: 1.125rem; /* 18px */
+  }
+  #tg-icon {
+    height: 0.9375rem; /* 15px */
+    width: 0.9375rem; /* 15px */
+  }

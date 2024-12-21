@@ -1,250 +1,61 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
-@use "../base/fonts";
-@use "../base/normalize";
-// .container {
-//   @include setka;
 
-//   p {
-//     color: aquamarine;
-//     display: grid;
-//   }
 
-//   .container__text {
-//     background-color: $bacground-color;
-//     transform: matrix();
-//     color: blue;
-//   }
-
-//   .container__box {
-//     width: 30px;
-//     height: 30px;
-//     border: 1px solid red;
-//     @include transform(rotate(30deg));
-//   }
-
-//   .container__box-item {
-//     width: 70px;
-//     height: 30px;
-//     background-color: $bacground-color;
-//     @include transform(skew(30deg, 20deg));
-//   }
-// }
-
-// О компании
 .about {
-    padding: 40px 0;
-
-    &__title {
-        @include mixin.title;
-        font-size: variables.$fs-h2;
-        color: variables.$title-color;
-        line-height: 2.375rem;
-        text-align: center;
-      }
-    
-    &__text {
-        font-family: variables.$ff;
-        font-weight: normal;
-        font-size: variables.$primary-font-size;
-        line-height: 24px;
-        color: variables.$black;
-        margin-top: 40px;
-        text-align: left;
-      }
-    &__image {
-      display: flex;
-        max-width: 100%;
-      }
-    
+  @include mixin.max-w;
+  margin-top: 8.75rem; /* 140px */
+  padding: 0 5rem 0 5rem;
+  box-sizing: border-box;
+  
+  .about__title {
+    @include mixin.title;
+    font-size: variables.$fs-h2;
+    color: variables.$title-color;
+    line-height: 2.375rem;
+    text-align: center;
   }
-  
-  // Направления деятельности
-  .activities {
-    padding: 60px 0;
-    
-    &__title {
-      @include mixin.title;
-      font-size: variables.$fs-h2;
-      color: variables.$title-color;
-      line-height: 2.375rem;
-      text-align: center;
-    }
-  
-    &__description {
-      font-family: variables.$ff;
-      font-weight: normal;
-      font-size: variables.$primary-font-size;
-      line-height: 24px;
-      color: variables.$black;
-      margin-top: 20px;
-      text-align: left;
-    }
-    
-    &__list {
-      list-style-type: none;
-      padding-left: 0;
-  
-      .activities__item {
-        background: variables.$bg-lightblue;
-        border-radius: 5px 5px 0 0;
-        padding: 10px;
-        font-family: variables.$ff;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 24px;
-        color: variables.$black;
-        margin-bottom: 10px;
-      }
-    }
-    .activities__info {
-      display: flex;
+  .about__wrap {
+    margin-top: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .about__wrap-text {
+    max-width: 50.9rem; /* 814px */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+  .about__text {
+    @include mixin.text;
+    font-size: variables.$desc-font-size;
+    line-height: 1.5rem;/* 24px */
+    margin: 0;
+  }
+  .about__wrap-img {
+    min-width: 22.875rem; /* 366px */
+  }
+  .about__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 1050px) {
+    .about__wrap {
       flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      
-      .activities__rectangle1,
-      .activities__rectangle2 {
-        background: variables.$bg-lightblue;
-        border-radius: 5px 5px 0 0;
-        padding: 20px;
-        font-family: variables.$ff;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        color: variables.$black;
-        margin-bottom: 20px;
-        flex: 1; 
-      }
-
-      @mixin activities_rectangle {
-        @media screen and (max-width: 992px) and (min-width: 576px) {
-          @content;
-        }
-      }
-
-      .activities__rectangle1 {
-        padding: 51px;
-        display: flex;
-        justify-content:  space-between;
-        align-items: center;
-
-        @include activities_rectangle() {
-          padding: 20px;
-        }
-      }
-
-    .activities__rectangle2 {
-      background: variables.$bg-lightblue;
-      border-radius: 5px 5px 0 0;
-      padding: 20px 51px;
-      font-family: variables.$ff;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
-      color: variables.$black;
-      margin-bottom: 20px;
-      flex: 1; 
-
-      @include activities_rectangle() {
-        padding: 20px;
-      }
+      gap: 1.5rem;
     }
+    .about__wrap-img {
+      margin-left: 0;
+    } 
   }
-  
-      .activities__rectangle2 {
-        margin-top: 0px; 
-      }
-    }    
-    
-
-.about{
-  @media screen and (max-width: 1200px) {
-
-    .activities__title {
-      font-size: 16px;
-    }
-  }
-  
-  @media screen and (max-width: 992px) {
-    .about__title {
-      font-size: 26px;
-    }
-  .about_text_2 {
-    font-size: 18px; 
-
-  }
-    .activities__title {
-      font-size: 26px;
-    }
-  
-    .activities__description {
-      font-size: 18px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .about__title {
-      font-size: 24px;
-    }
-    .activities__title {
-      font-size: 1.1rem;
-    }
-
-    .about_text_2 {
-      font-size: 12px; 
-  
-    }
-
-    .activities__description {
-      font-size: 0.9rem;
-    }
-    //.activities__info {
-      //display: block;}
-
-    .activities__list {
-      .activities__item {
-        font-size: 0.9rem;
-      }
-    }
-  }
-  
-  @media screen and (max-width: 576px) {
-    .about__title {
-      font-size: 22px;
-    }
-  
-    .activities__title {
-      font-size: 1rem;
-    }
-
-    .activities__description {
-      font-size: 0.8rem;
-    }
-
-    .activities__list {
-      .activities__item {
-        font-size: 0.8rem;
-      }
-    }
-  }
-  
-  @media screen and (max-width: 375px) {
-    .about__title {
-      font-size: 18px;
-    }
-    .activities__title {
-      font-size: 0.9rem;
-    }
-
-    .activities__description {
-      font-size: 0.7rem;
-    }
-    .activities__list {
-      .activities__item {
-        font-size: 0.7rem;
-      }
+  @media screen and (max-width: 570px) {
+    margin: 8.75rem 1.5rem 0 1.5rem; /* 140px 24px 0 24px*/
+    padding: 0;
+    .about__wrap-img {
+      min-width: min-content;
     }
   }
 }
-  

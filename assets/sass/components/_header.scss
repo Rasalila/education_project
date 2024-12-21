@@ -1,7 +1,5 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
-@use "../base/fonts";
-@use "../base/normalize";
 
 header {
   .container {
@@ -131,23 +129,6 @@ header {
 }
 
 // обложка
-.cover {
-  width: 100%;
-  max-width: 1360px;
-  max-height: 750px;
-  height: 100%;
-  border-radius: 30px;
-  background-color: rgb(40, 50, 112);
-  padding: 0;
-  color: white;
-}
-
-.cover-img {
-  max-width: 1360px;
-  width: 100%;
-  background-size: cover;
-  padding: 0;
-}
 
 .cover-section {
   width: 100%;
